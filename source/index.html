@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <!--  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="" />
     <!--  -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/iconsfavicon_package_v0.16/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon_package_v0.16/favicon-32x32.png" />
@@ -18,8 +17,9 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page__header page__header--style">
-      <a href="" class="page-header__logo page-header-logo--mobile">
+    <!-- Шапка сайта : логотит, навигация ( меню ) -->
+    <header class="main-header main-header--style">
+      <a href="" class="main-header__logo main-header__logo--mobile">
         <img src="img/logo/cat-e__logo.svg" width="33" height="38" alt="Логотип" />
         <img src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Кэт энерджи" />
       </a>
@@ -29,27 +29,27 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list nav-list--col">
-            <li class="nav-list__item uppercase nav__item--current"><a href="">Главная</a></li>
-            <li class="nav-list__item uppercase"><a href="">Каталог продукции</a></li>
-            <li class="nav-list__item uppercase"><a href="">Подбор программы</a></li>
+            <li class="nav-list__item nav-list__item--current"><a href="">Главная</a></li>
+            <li class="nav-list__item"><a href="">Каталог продукции</a></li>
+            <li class="nav-list__item"><a href="">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <!--  -->
-    <main class="page__main">
-      <!--  -->
+    <main class="main">
+      <!-- Вводный блок, представление товара -->
       <section class="promo">
         <h1 class="promo__title"> Функциональное<br />питание для котов </h1>
-        <p class="promo__subtitle uppercase"> Занялся собой? Займись котом! </p>
+        <p class="promo__subtitle"> Занялся собой? Займись котом! </p>
         <img src="img/icons/product.svg" width="280" height="270" alt="Наш продукт" />
-        <a href="catalog.html" class="button-promo button-promo--style uppercase">подобрать программу</a>
+        <a href="catalog.html" class="button-promo button-promo--style">подобрать программу</a>
       </section>
-      <!--  -->
-      <section class="privileges flex">
-        <article class="privileges__item privileges__item1">
+      <!-- Описание возможностей товара -->
+      <div class="privileges">
+        <article class="privileges__item privileges__item-1">
           <img src="img/privileges/privileges_slim.svg" width="50" height="53" alt="Похудевший кот" />
-          <h2 class="uppercase">похудение</h2>
+          <h2 class="privileges__title">похудение</h2>
           <p class="privileges__description privileges__item-1">
             Ваш кот весит больше собаки и<br />
             почти утратил способность лазить<br />
@@ -57,11 +57,11 @@
             Energy Slim поможет вашему<br />
             питомцу сбросить лишний вес.
           </p>
-          <a href="catalog.html" class="catalog-button catalog-button--style uppercase"> каталог slim </a>
+          <a href="catalog.html" class="catalog-button catalog-button--style"> каталог slim </a>
         </article>
-        <article class="privileges__item privileges__item2">
+        <article class="privileges__item privileges__item-2">
           <img src="img/privileges/privileges_muscle.svg" width="67" height="50" alt="Кот, набравший массу" />
-          <h2 class="uppercase">Набор массы</h2>
+          <h2 class="privileges__title">Набор массы</h2>
           <p class="privileges__description privileges__item-2">
             Заработать авторитет среди<br />
             дворовых котов и даже собак?<br />
@@ -69,13 +69,13 @@
             вашему коту нарастить<br />
             необходимые мышцы!
           </p>
-          <a href="catalog.html" class="catalog-button catalog-button--style uppercase"> каталог pro </a>
+          <a href="catalog.html" class="catalog-button catalog-button--style"> каталог pro </a>
         </article>
-      </section>
-      <!--  -->
-      <section class="how-it-work flex">
-        <h2 class="privileges__title"> Как это работает </h2>
-        <article class="how-it-work__description">
+      </div>
+      <!-- Как работает и из чего состоит -->
+      <section class="how-it-work">
+        <h2 class="how-it-work__title"> Как это работает </h2>
+        <div class="how-it-work__description">
           <ul class="how-it-work__list">
             <li class="how-it-work__item">
               <img src="img/icons/icon-leaf.svg" width="60" height="60" alt="Полезная еда" />
@@ -118,10 +118,10 @@
               <!-- z-index ? -->
             </li>
           </ul>
-        </article>
+        </div>
       </section>
-      <!--  -->
-      <section class="cat-change">
+      <!-- Показательный блок : массивный кот превращается в худого, и наоборот -->
+      <div class="cat-change">
         <article class="cat-change__description">
           <h2>Живой пример</h2>
           <p
@@ -133,12 +133,12 @@
             в день.
           </p>
           <div class="result-block">
-            <span class="result-block__text uppercase">5 кг</span>
+            <span class="result-block__text">5 кг</span>
             <span class="result-block__sub-text">снижение веса</span>
             <!-- border/border-shadow ? -->
           </div>
           <div class="result-block">
-            <span class="result-block__text uppercase">60 дней</span>
+            <span class="result-block__text">60 дней</span>
             <span class="result-block__sub-text">затрачено времени</span>
             <!-- border/border-shadow ? -->
           </div>
@@ -150,15 +150,15 @@
             <img src="img/cat-change/cat-skinny.png" width="311" height="232" alt="Худой кот" />
           </div>
           <label>
-            <span class="uppercase">было</span>
+            <span class="cat-change__range__before">было</span>
             <input class="cat-change__range js-range" type="range" name="cat-change" min="0" max="100" value="50" step="10" />
-            <span class="uppercase">стало</span>
+            <span class="cat-change__range__after">стало</span>
           </label>
         </div>
-      </section>
-      <!--  -->
+      </div>
+      <!-- Вербовка партнёров и инвесторов -->
       <section class="partnership">
-        <h2 class="uppercase">
+        <h2 class="partnership__title">
           приглашаем<br />
           к сотрудничеству<br />
           дилеров!
@@ -169,22 +169,23 @@
           <span class="city">Санкт-Петербург</span>
         </p>
       </section>
-      <!--  -->
-      <section class="location">
-        <img src="img/logo/cat-energy-logo__map.svg" alt="Кэт энерджи" class="location__organization-logo" />
-      </section>
+      <!-- Карта с отображением нашей организации -->
+      <div class="location">
+        <img src="img/logo/cat-energy-logo__map.svg" alt="Кэт энерджи" width="57" height="53" class="location__organization-logo" />
+      </div>
     </main>
-    <footer class="page__footer">
-      <div class="page-footer__text-logo">
+    <footer class="footer">
+      <div class="footer__text-logo">
         <a href="index.html"><img src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Кэт энерджи" /></a>
       </div>
-      <div class="page-footer__social">
+      <!-- Подвал : наш логотип, соц-сети и Html academy -->
+      <div class="footer__social">
         <a href=""><img src="img/icons/icon_vk.svg" width="25" height="17" alt="Вконтакте" /></a>
         <a href=""><img src="img/icons/icon_inst.svg" width="16" height="16" alt="Инстаграм" /></a>
         <a href=""><img src="img/icons/icon_facebook.svg" width="20" height="18" alt="Фейсбук" /></a>
       </div>
-      <div class="page-footer__html-academy-logo">
-        <a class="html-academy__link" href="https://htmlacademy.ru/" target=".blank"><span>HTML Academy</span><img src="img/logo/html-academy__logo.svg" alt="Html Academy" /></a>
+      <div class="footer__html-academy-logo">
+        <a class="footer__html-academy-link" href="https://htmlacademy.ru/" target=".blank"><span>HTML Academy</span><img src="img/logo/html-academy__logo.svg" width="27" height="34" alt="Html Academy" /></a>
       </div>
     </footer>
   </body>
