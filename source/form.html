@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/iconsfavicon_package_v0.16/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon_package_v0.16/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon_package_v0.16/favicon-16x16.png" />
+    <link rel="manifest" href="img/icons/favicon_package_v0.16/site.webmanifest" />
+    <link rel="mask-icon" href="img/icons/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--  -->
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+  </head>
+  <body>
+    <!-- Шапка сайта : логотит, навигация ( меню ) -->
+    <header class="main-header main-header--style">
+      <a href="index.html" class="main-header__logo main-header__logo--mobile">
+        <img src="img/logo/cat-e__logo.svg" width="33" height="38" alt="Логотип" />
+        <img src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Кэт энерджи" />
+      </a>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <span class="visualy-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list nav-list--col">
+            <li class="nav-list__item"><a href="index.html">Главная</a></li>
+            <li class="nav-list__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="nav-list__item nav-list__item--current"><a href="form.html">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+    <!-- Форма подбора программы -->
+    <h1 class="main-title">Подбор программы</h1>
+    <form class="program-form form" action="https://echo.htmlacademy.ru" method="POST"> 
+      <fieldset>
+        <legend>Заполните анкету, и мы подберем<br> программу питания для вашего кота</legend>
+        <div class="form__item cat-data">
+          <label class="form__label">ИМЯ:*<input class="form__text-input" type="text" placeholder="барсик" name="name" required></label>
+          <label class="form__label">Вес (кг):*<input class="form__text-input" type="text" placeholder="7" name="weight" required></label>
+          <label class="form__label">Возраст (лет):<input class="form__text-input" type="text" placeholder="7" name="age"></label>
+        </div>
+        <div class="form__item program-selection">
+          <label class="form__label">похудение<input class="form__radio-input visually-hidden" type="radio" name="mass" value="down-mass" checked></label>
+          <label class="form__label">Набор массы<input class="form__radio-input visually-hidden" type="radio" name="mass" value="up-mass"></label>
+          <label class="form__label">Не знаю (Нужен ваш совет)<input class="form__input-radio visually-hidden" type="radio" name="mass" value="advice-mass"></label>
+        </div>
+      </fieldset>
+      <fieldset class="form__item personal-data">
+        <legend>Контактные данные<br> (владельца кота)</legend>
+          <label class="form__label">E-mail:*<input class="form__text-input form__text-input--email" type="email" placeholder="kuklachev@gmail.com" name="email" required></label>
+          <label class="form__label">Телефон:*<input class="form__text-input form__text-input--phone" type="tel" placeholder="8 (960) 900-60-90" name="phone" required></label>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend>Комментарий</legend>
+        <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend>Дополнительно</legend>
+        <label class="form__label">сахарозаменитель<input class="form__checkbox-input visually-hidden" type="checkbox" name="sweetener" checked></label>
+        <label class="form__label">питьевая вода<input class="form__checkbox-input visually-hidden" type="checkbox" name="drinkwater"></label>
+        <label class="form__label">молоко<input class="form__checkbox-input visually-hidden" type="checkbox" name="milk"></label>
+        <label class="form__label">витамины<input class="form__checkbox-input visually-hidden" type="checkbox" name="vitamins"></label>
+        </fieldset>
+        <div class="form__item form__send-button-wrapper">
+            <button class="form__send-button" type="submit">Отправить заявку</button>
+            <p class="form__required-notify">* — Обязательные поля</p>
+        </div>
+    </form>
+      <!-- Вербовка партнёров и инвесторов -->
+      <section class="partnership">
+        <p class="partnership__title">
+          приглашаем<br />
+          к сотрудничеству<br />
+          дилеров!
+        </p>
+        <p class="adress">
+          ул. Большая<br />
+          Конюшенная, д. 19/8
+          <span class="city">Санкт-Петербург</span>
+        </p>
+      </section>
+      <!-- Карта с отображением нашей организации -->
+      <div class="location">
+        <img src="img/logo/cat-energy-logo__map.svg" alt="Кэт энерджи" width="57" height="53" class="location__organization-logo" />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__text-logo">
+        <a href="index.html"><img src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Кэт энерджи" /></a>
+      </div>
+      <!-- Подвал : наш логотип, соц-сети и Html academy -->
+      <div class="footer__social">
+        <a href="#"><img src="img/icons/icon_vk.svg" width="25" height="17" alt="Вконтакте" /></a>
+        <a href="#"><img src="img/icons/icon_inst.svg" width="16" height="16" alt="Инстаграм" /></a>
+        <a href="#"><img src="img/icons/icon_facebook.svg" width="20" height="18" alt="Фейсбук" /></a>
+      </div>
+      <div class="footer__html-academy-logo">
+        <a class="footer__html-academy-link" href="https://htmlacademy.ru/" target=".blank"><span>HTML Academy</span><img src="img/logo/html-academy__logo.svg" width="27" height="34" alt="Html Academy" /></a>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- <DOCTYPE Liky> -->
