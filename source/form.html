@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/iconsfavicon_package_v0.16/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon_package_v0.16/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon_package_v0.16/favicon-16x16.png" />
+    <link rel="manifest" href="img/icons/favicon_package_v0.16/site.webmanifest" />
+    <link rel="mask-icon" href="img/icons/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--  -->
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+  </head>
+  <body>
+    <!-- Шапка сайта : логотит, навигация ( меню ) -->
+    <header class="main-header main-header--style">
+      <a href="index.html" class="main-header__logo main-header__logo--mobile">
+        <img src="img/logo/cat-e__logo.svg" width="33" height="38" alt="Logotype" />
+        <img src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Cat Energy" />
+      </a>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <span class="visualy-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list nav-list--col">
+            <li class="nav-list__item"><a href="index.html">Главная</a></li>
+            <li class="nav-list__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="nav-list__item nav-list__item--current"><a href="form.html">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+    <!-- Форма подбора программы -->
+    <h1 class="main-title">Подбор программы</h1>
+    <form class="program-form form" action="https://echo.htmlacademy.ru" method="POST">
+      <!-- Контейнер формы -->
+      <fieldset class="form-container container">
+        <p class="main-subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+        <!-- __Элемент контейнера формы -->
+        <div class="form-container__item cat-data">
+          <ul class="form__list-wrapper">
+            <li class="list-item">
+              <label class="form__label">ИМЯ:*<input class="form__text-input" type="text" placeholder="барсик" name="name" required></label>
+            </li>
+            <li class="list-item">
+              <label class="form__label">Вес (кг):*<input class="form__text-input" type="text" placeholder="7" name="weight" required></label>
+            </li>
+            <li class="list-item">
+              <label class="form__label">Возраст (лет):<input class="form__text-input" type="text" placeholder="7" name="age"></label>
+            </li>
+          </ul>
+        </div>
+        <!-- __Элемент контейнера формы -->
+        <div class="form-container__item program-selection">
+          <ul class="form__list-wrapper">
+            <li class="list-item">
+              <label class="form__label"><input class="form__radio-input visually-hidden" type="radio" name="mass" value="mass-down" checked>похудение</label>
+            </li>
+            <li class="list-item">
+              <label class="form__label"><input class="form__radio-input visually-hidden" type="radio" name="mass" value="mass-up">Набор массы</label>
+            </li>
+            <li class="list-item">
+              <label class="form__label"><input class="form__input-radio visually-hidden" type="radio" name="mass" value="mass-need-advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <!-- Контейнер формы -->
+      <fieldset class="form__item personal-data">
+        <legend>Контактные данные<br> (владельца кота)</legend>
+        <ul class="form__list-wrapper">
+          <li class="list-item">
+            <label class="form__label">E-mail:*<input class="form__text-input form__text-input--email" type="email" placeholder="kuklachev@gmail.com" name="email" required></label>
+            <img src="img/icons/icon-email.svg" alt="email">
+          </li>
+          <li class="list-item">
+            <label class="form__label">Телефон:*<input class="form__text-input form__text-input--phone" type="tel" placeholder="8 (960) 900-60-90" name="phone" required></label>
+            <img src="img/icons/icon-tel.svg" alt="phone">
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Контейнер формы -->
+      <fieldset class="form__item">
+        <legend>Комментарий</legend>
+        <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+      </fieldset>
+      <!-- Контейнер формы -->
+      <fieldset class="form__item">
+        <legend>Дополнительно</legend>
+        <ul class="form__list-wrapper">
+          <li class="list-item">
+            <label class="form__label"><input class="form__checkbox-input visually-hidden" type="checkbox" name="sweetener" checked>сахарозаменитель</label>
+          </li>
+          <li class="list-item">
+            <label class="form__label"><input class="form__checkbox-input visually-hidden" type="checkbox" name="drinkwater">питьевая вода</label>
+          </li>
+          <li class="list-item">
+            <label class="form__label"><input class="form__checkbox-input visually-hidden" type="checkbox" name="milk">молоко</label>
+          </li>
+          <li class="list-item">
+            <label class="form__label"><input class="form__checkbox-input visually-hidden" type="checkbox" name="vitamins">витамины</label>
+          </li>
+        </ul>
+        </fieldset>
+        <!-- Кнопка отправки формы -->
+        <div class="form__item form__send-button-wrapper">
+            <button class="form__send-button" type="submit">Отправить заявку</button>
+            <p class="form__required-notify">* — Обязательные поля</p>
+        </div>
+    </form>
+      <!-- Вербовка партнёров и инвесторов -->
+      <div class="partnership">
+        <p class="partnership__title">
+          приглашаем<br />
+          к сотрудничеству<br />
+          дилеров!
+        </p>
+        <p class="adress">
+          ул. Большая<br />
+          Конюшенная, д. 19/8
+          <span class="city">Санкт-Петербург</span>
+        </p>
+      </div>
+      <!-- Карта с отображением нашей организации -->
+      <div class="location">
+        <img src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57" height="53" class="location__organization-logo" />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__text-logo">
+        <a href="index.html"><img src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Cat Energy" /></a>
+      </div>
+      <!-- Подвал : наш логотип, соц-сети и Html academy -->
+      <div class="footer__social">
+        <a href="#"><img src="img/icons/icon_vk.svg" width="25" height="17" alt="Vkontakte" /></a>
+        <a href="#"><img src="img/icons/icon_inst.svg" width="16" height="16" alt="Instagram" /></a>
+        <a href="#"><img src="img/icons/icon_facebook.svg" width="20" height="18" alt="Facebook" /></a>
+      </div>
+      <div class="footer__html-academy-logo">
+        <a class="footer__html-academy-link" href="https://htmlacademy.ru/" target=".blank"><span>HTML Academy</span><img src="img/logo/html-academy__logo.svg" width="27" height="34" alt="Html Academy" /></a>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- <DOCTYPE Liky> -->
