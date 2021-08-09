@@ -1,0 +1,6 @@
+@mixin block-position--flex($j-content,$width,$m-width) {
+    display: inline-flex;
+    justify-content: $j-content;
+    width: $width;
+    max-width: $m-width;
+}

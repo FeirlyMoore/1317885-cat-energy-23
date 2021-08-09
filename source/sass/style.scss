@@ -1,1 +1,12 @@
 // Начните писать стили здесь
+body { background: red; }
+
+/* GLOBAL */
+
+@import("global/variables.scss");
+@import("global/normalize");
+@import("global/mixins.scss");
+
+/* HEADER */
+
+@import("header/header.scss");
