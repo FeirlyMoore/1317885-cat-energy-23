@@ -1,6 +1,6 @@
 let navToggle = document.querySelector(".nav-toggle-button--js");
 let nav = document.querySelector(".main-nav");
-let indexNav = document.querySelector(".nav-list__item-index--js");
+let indexNav = document.querySelector(".nav-list__item-index");
 let partnership = document.querySelector(".partnership");
 
 navToggle.onclick = function () {

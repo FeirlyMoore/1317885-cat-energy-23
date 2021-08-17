@@ -1,21 +1,21 @@
 .how-it-work {
-    @include container();
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 0 20px;
-    margin-bottom: 36px;
+  @include container();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color;
+  padding: 0 20px;
+  margin-bottom: 36px;
 }
 
 .how-it-work__title {
-    font-family: "Oswald Regular","Arial",sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 50px;
-    text-align: left;
-    color: $pre-black-color;
-    margin: 0 0 35px;
+  font-family: "Oswald Regular","Arial",sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  color: $pre-black-color;
+  margin: 0 0 35px;
 }
 
 .how-it-work__list {
@@ -43,7 +43,7 @@
 
 .how-it-work__img {
   margin-right: 20px;
-  background-color: #68b738;
+  background-color: $light-green;
   padding: 5px;
   width: 50px;
   height: auto;

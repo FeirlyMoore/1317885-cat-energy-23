@@ -20,5 +20,5 @@
   line-height: 14px;
   font-style: normal;
   font-weight: normal;
-  text-transform: uppercase;
+  @include uppercase();
 }

@@ -54,7 +54,7 @@
   line-height: 16px;
   font-weight: 400;
   color: $special_dark-grey-2;
-  text-transform: uppercase;
+  @include uppercase();
   margin: 13px 0;
   width: 100%;
 }
@@ -82,7 +82,7 @@
   color: $main-color;
   background-color: $light-green;
   border: 0;
-  text-transform: uppercase;
+  @include uppercase();
   padding: 10px 0;
   margin-bottom: 17px;
   width: 100%;

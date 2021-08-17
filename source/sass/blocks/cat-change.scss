@@ -7,10 +7,6 @@
   background-color: $light-gray;
 }
 
-.cat-change__description {
-
-}
-
 .cat-change__title {
   font-family: "Oswald Regular","Arial",sans-serif;
   font-size: 36px;
@@ -55,7 +51,7 @@
   font-family: "Oswald Regular","Arial",sans-serif;
   font-size: 24px;
   line-height: 24px;
-  color: #111;
+  color: $pre-black-color;
   @include uppercase();
   margin: 0;
 }
@@ -80,7 +76,7 @@
   font-family: "Oswald Regular","Arial",sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #111;
+  color: $pre-black-color;
   @include uppercase();
   text-align: center;
   margin: 0 0 0 3px;
@@ -129,7 +125,7 @@
 .cat-change__range {
   width: 82px;
   height: 12px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special_grey;
   background-color: $main-color;
   border-radius: 6px;
   margin-left: 20px;

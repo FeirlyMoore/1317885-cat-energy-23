@@ -11,7 +11,7 @@
   min-width: 240px;
   padding: 29px 20px 20px;
   margin-bottom: 22px;
-  background-color: #f2f2f2;
+  background-color: $footer-gray;
 }
 
 .privileges__item-img {
@@ -31,7 +31,7 @@
   line-height: 37px;
   color: $pre-black-color;
   font-weight: 400;
-  text-transform: uppercase;
+  @include uppercase();
   padding-left: 72px;
   margin: 0 0 30px;
 }
@@ -41,7 +41,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $footer-gray-border;
   margin: 0 0 20px;
   padding-bottom: 22px;
 }
@@ -52,7 +52,7 @@
   line-height: 16px;
   color: $pre-black-color;
   text-decoration: none;
-  text-transform: uppercase;
+  @include uppercase();
   display: block;
   position: relative;
 }

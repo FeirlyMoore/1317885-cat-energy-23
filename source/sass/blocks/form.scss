@@ -1,7 +1,6 @@
 .program-form {
   @include container();
   margin-bottom: 30px;
-
 }
 
 .main-subtitle {
@@ -9,7 +8,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $pre-black-color;
-  text-transform: uppercase;
+  @include uppercase();
   margin: 0 auto 38px;
   padding: 0 20px;
 }

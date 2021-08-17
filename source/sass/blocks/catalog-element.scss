@@ -20,7 +20,7 @@
   line-height: 20px;
   font-weight: 400;
   color: $pre-black-color;
-  text-transform: uppercase;
+  @include uppercase();
   width: 90px;
   margin: 0 0 13px;
 }
@@ -57,7 +57,7 @@
   color: $main-color;
   flex-grow: 1;
   border: 0;
-  text-transform: uppercase;
+  @include uppercase();
   padding: 10px 0;
   margin-bottom: 24px;
   text-align: center;
