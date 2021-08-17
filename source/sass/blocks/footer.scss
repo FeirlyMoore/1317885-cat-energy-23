@@ -3,9 +3,9 @@
 }
 
 .footer__wrapper {
+  @include container();
   display: flex;
   flex-direction: column;
-  @include container();
   padding: 0 20px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .footer__html-academy__link {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: $special_dark-grey;

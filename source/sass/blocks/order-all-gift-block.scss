@@ -1,9 +1,9 @@
 .order-all-gift {
   min-width: 280px;
   min-height: 225px;
-  background-color: $light-green;
   background: center/280px no-repeat;
-  background-image: linear-gradient(to top, $light-green-background, $light-green-background), url(../img/logo/catalog-gift-background.png);
+  background-color: $light-green;
+  background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/logo/catalog-gift-background.png");
   padding-top: 65px;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .gift__text {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $main-color;

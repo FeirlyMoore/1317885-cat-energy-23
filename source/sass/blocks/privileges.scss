@@ -1,6 +1,5 @@
 .privileges {
+  @include container();
   display: flex;
   justify-content: center;
-  @include container();
-  //padding: 0 20px;
 }

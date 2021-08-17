@@ -4,11 +4,11 @@
 }
 
 .promo-button--style {
-  font-family: "Oswald Regular","Arial",sans-serif;
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  @include uppercase();
   color: $main-color;
   background-color: $light-green;
 }

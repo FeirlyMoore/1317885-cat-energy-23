@@ -1,7 +1,7 @@
 .promo__title-wrapper {
   text-align: center;
   font-family: "Oswald Regular", sans-serif;
-  color: #fff;
+  color: $main-color;
 
   /* Outline */
   /*outline: 5px solid blue;
@@ -16,9 +16,9 @@
 }
 
 .promo__subtitle {
+  @include uppercase();
   font-size: 14px;
   line-height: 14px;
   font-style: normal;
   font-weight: normal;
-  @include uppercase();
 }

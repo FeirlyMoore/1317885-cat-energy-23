@@ -7,7 +7,7 @@
   @include container();
   position: relative;
   display: inline-block;
-  font-family: "Oswald Regular","Arial",sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: $pre-black-color;
@@ -16,7 +16,7 @@
   margin: 0 0 35px;
   padding: 0 20px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     width: 53px;
@@ -24,7 +24,7 @@
     top: 14px;
     right: 0;
     background-color: $light-green;
-}
+  }
 }
 
 .additional-products__wrapper {
@@ -49,18 +49,18 @@
 }
 
 .additional-products__item-title {
-  font-family: "Oswald Regular","Arial",sans-serif;
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $special_dark-grey-2;
-  @include uppercase();
-  margin: 13px 0;
   width: 100%;
+  margin: 13px 0;
 }
 
 .additional-products__quantity {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $special_dark-grey;
@@ -68,7 +68,7 @@
 }
 
 .additional-products__price {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $special_dark-grey;
@@ -76,16 +76,16 @@
 }
 
 .additional-products__order {
-  font-family: "Oswald Regular","Arial",sans-serif;
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $main-color;
+  text-align: center;
+  width: 100%;
   background-color: $light-green;
   border: 0;
-  @include uppercase();
   padding: 10px 0;
   margin-bottom: 17px;
-  width: 100%;
   margin-top: 15px;
-  text-align: center;
 }

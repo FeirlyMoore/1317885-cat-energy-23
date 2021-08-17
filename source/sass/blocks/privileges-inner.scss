@@ -26,33 +26,33 @@
 }
 
 .privileges__title {
-  font-family: "Oswald Regular","Arial",sans-serif;
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   color: $pre-black-color;
   font-weight: 400;
-  @include uppercase();
   padding-left: 72px;
   margin: 0 0 30px;
 }
 
 .privileges__description {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #444;
+  color: $special_dark-grey;
   border-bottom: 1px solid $footer-gray-border;
   margin: 0 0 20px;
   padding-bottom: 22px;
 }
 
 .catalog-button {
-  font-family: "Oswald Regular","Arial",sans-serif;
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: $pre-black-color;
   text-decoration: none;
-  @include uppercase();
   display: block;
   position: relative;
 }

@@ -1,10 +1,10 @@
 .promo {
+  @include container();
   display: flex;
   flex-direction: column;
-  @include container();
   height: 480px;
   margin-bottom: 22px;
-  background: top/320px 302px no-repeat url(../img/logo/index-background-mobile.jpg);
+  background: top/320px 302px no-repeat url("../img/logo/index-background-mobile.jpg");
 
   /* Outline */
   /*outline: 5px solid orangered;

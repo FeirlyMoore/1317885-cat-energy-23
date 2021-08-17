@@ -15,12 +15,12 @@
 }
 
 .products__title {
-  font-family: "Oswald Regular","Arial",sans-serif;
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: $pre-black-color;
-  @include uppercase();
   width: 90px;
   margin: 0 0 13px;
 }
@@ -37,7 +37,7 @@
 }
 
 .description-table__cell {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
@@ -49,15 +49,15 @@
 }
 
 .order-button {
+  @include uppercase();
   display: block;
   background-color: $light-green;
-  font-family: "Oswald Regular","Arial",sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $main-color;
   flex-grow: 1;
   border: 0;
-  @include uppercase();
   padding: 10px 0;
   margin-bottom: 24px;
   text-align: center;
