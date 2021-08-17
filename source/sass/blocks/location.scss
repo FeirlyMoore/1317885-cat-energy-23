@@ -1,0 +1,13 @@
+.location {
+  display: flex;
+  justify-content: center;
+  @include container();
+  min-height: 362px;
+  height: 100%;
+  background: center / cover no-repeat url(/img/logo/location-map.png);
+}
+
+.location__organization-logo {
+  display: block;
+  margin: auto;
+}

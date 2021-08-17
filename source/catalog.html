@@ -14,34 +14,42 @@
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
     <!--  -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Кэт энерджи - Каталог продукции </title>
   </head>
 
   <body>
     <!-- Шапка сайта : логотит, навигация ( меню ) -->
     <header class="main-header main-header--style">
-      <a href="" class="main-header__logo main-header__logo--mobile"> <img src="img/logo/cat-e__logo.svg" width="33" height="38" alt="Logotype" /> <img src="img/logo/cat-e__logo-text.svg"
-        width="101" height="18" alt="Cat Energy" /> </a>
+      <div class="main-header__wrapper">
+      <a href="" class="main-header__logo">
+       <img class="header-logo-img-1" src="img/logo/cat-e__logo.svg" width="33" height="38" alt="Logotype" />
+      </a>
+      <a href="" class="main-header__logo">
+       <img class="header-logo-img-2" src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Cat Energy" />
+      </a>
+      </div>
+      <!-- Навигация -->
       <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"> <span class="visualy-hidden">Открыть меню</span> </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list nav-list nav-list--col">
-            <li class="nav-list__item"><a href="index.html">Главная</a></li>
+        <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню">
+         <span class="visualy-hidden">Открыть меню</span>
+        </button>
+          <ul class="nav-list nav-list--style">
+            <li class="nav-list__item nav-list__item-index--js"><a href="index.html">Главная</a></li>
             <li class="nav-list__item nav-list__item--current"><a href="catalog.html">Каталог продукции</a></li>
             <li class="nav-list__item"><a href="form.html">Подбор программы</a></li>
           </ul>
-        </div>
       </nav>
     </header>
     <main class="main">
       <!-- Каталог продукции -->
       <h1 class="main-title">Каталог продукции</h1>
-      <div class="products-wrapper products">
+      <div class="products__wrapper products">
         <!-- Элемент каталога -->
-        <article class="products__item"> <img src="img/icons/product__pro-chicken--500.svg" alt="Cat Energy PRO Курица 500 г" width="68" height="86">
-          <h2>Cat Energy<br> PRO 500 г</h2>
+        <article class="products__item">
+          <img class="products__img" src="img/icons/product__pro-chicken--500.svg" alt="Cat Energy PRO Курица 500 г" width="68" height="86">
           <div class="item-description">
+            <h2 class="products__title">Cat Energy<br> PRO 500 г</h2>
             <table class="description-table">
               <tbody>
                 <tr class="description-table__row">
@@ -63,8 +71,8 @@
         </article>
         <!-- Элемент каталога -->
         <article class="products__item"> <img src="img/icons/product__pro-chicken--1000.svg" alt="Cat Energy PRO Курица 1000 г" width="84" height="100">
-          <h2>Cat Energy<br> PRO 1000 г</h2>
           <div class="item-description">
+            <h2  class="products__title">Cat Energy<br> PRO 1000 г</h2>
             <table class="description-table">
               <tbody>
                 <tr class="description-table__row">
@@ -86,8 +94,8 @@
         </article>
         <!-- Элемент каталога -->
         <article class="products__item"> <img src="img/icons/product__pro-fish--500.svg" alt="Cat Energy PRO Рыба 500 г" width="68" height="78">
-          <h2>Cat Energy<br> PRO 500 г</h2>
           <div class="item-description">
+            <h2  class="products__title">Cat Energy<br> PRO 500 г</h2>
             <table class="description-table">
               <tbody>
                 <tr class="description-table__row">
@@ -109,8 +117,8 @@
         </article>
         <!-- Элемент каталога -->
         <article class="products__item"> <img src="img/icons/product__pro-fish--1000.svg" alt="Cat Energy PRO Рыба 1000 г" width="84" height="100">
-          <h2>Cat Energy<br> PRO 1000 г</h2>
           <div class="item-description">
+            <h2  class="products__title">Cat Energy<br> PRO 1000 г</h2>
             <table class="description-table">
               <tbody>
                 <tr class="description-table__row">
@@ -132,8 +140,8 @@
         </article>
         <!-- Элемент каталога -->
         <article class="products__item"> <img src="img/icons/product__slim-buckwheat--500.svg" alt="Cat Energy Slim Греча 500 г" width="68" height="78">
-          <h2>Cat Energy<br> slim 500 г</h2>
           <div class="item-description">
+            <h2  class="products__title">Cat Energy<br> slim 500 г</h2>
             <table class="description-table">
               <tbody>
                 <tr class="description-table__row">
@@ -155,8 +163,8 @@
         </article>
         <!-- Элемент каталога -->
         <article class="products__item"> <img src="img/icons/product__slim-buckwheat--1000.svg" alt="Cat Energy Slim Греча 1000 г" width="84" height="100">
-          <h2>Cat Energy<br> slim 1000 г</h2>
           <div class="item-description">
+            <h2  class="products__title">Cat Energy<br> slim 1000 г</h2>
             <table class="description-table">
               <tbody>
                 <tr class="description-table__row">
@@ -178,8 +186,8 @@
         </article>
         <!-- Элемент каталога -->
         <article class="products__item"> <img src="img/icons/product__slim-rice--500.svg" alt="Cat Energy Slim Рис 500 г" width="72" height="84">
-          <h2>Cat Energy<br> slim 500 г</h2>
           <div class="item-description">
+            <h2  class="products__title">Cat Energy<br> slim 500 г</h2>
             <table class="description-table">
               <tbody>
                 <tr class="description-table__row">
@@ -200,46 +208,44 @@
           <button class="order-button">заказать</button>
         </article>
         <!-- Ссылка на полный каталог -->
-        <div class="products-item show-all"> <img src="img/icons/icon-plus.svg" alt="plus">
-          <p class="show-all__title">Показать еще
-            <br> 100500 товаров</p>
-          <p class="show-all__description">На самом деле вкусов
-            <br> гораздо больше!</p>
+        <div class="products-item show-all"> <img class="products-item__shaw-all-icon" src="img/icons/icon-plus.svg" alt="plus">
+          <p class="show-all__title">Показать еще 100500 товаров</p>
+          <p class="show-all__description">На самом деле вкусов гораздо больше!</p>
           <button class="order-button show-all__button">показать всё</button>
         </div>
       </div>
       <!-- Дополнительные товары -->
       <section class="additional-products">
-        <h3 class="additional-products__header-title">Дополнительные товары</h3>
+        <h3 class="additional-products__title">Дополнительные товары</h3>
         <div class="additional-products__wrapper">
           <ul class="additional-products__list">
             <li class="additional-products__item">
-              <h2 class="additional-products__title">Сахарозаменитель</h2>
+              <h2 class="additional-products__item-title">Сахарозаменитель</h2>
               <p class="additional-products__quantity">1 упаковка (100 г)</p>
               <p class="additional-products__price">100 Р.</p>
               <button class="additional-products__order">Заказать</button>
             </li>
             <li class="additional-products__item">
-              <h2 class="additional-products__title">Питьевая вода</h2>
+              <h2 class="additional-products__item-title">Питьевая вода</h2>
               <p class="additional-products__quantity">5 литров</p>
               <p class="additional-products__price">50 Р.</p>
               <button class="additional-products__order">Заказать</button>
             </li>
             <li class="additional-products__item">
-              <h2 class="additional-products__title">Молоко</h2>
+              <h2 class="additional-products__item-title">Молоко</h2>
               <p class="additional-products__quantity">1 литр</p>
               <p class="additional-products__price">100 Р.</p>
               <button class="additional-products__order">Заказать</button>
             </li>
             <li class="additional-products__item">
-              <h2 class="additional-products__title">Витамины</h2>
+              <h2 class="additional-products__item-title">Витамины</h2>
               <p class="additional-products__quantity">1 упаковка (30 г)</p>
               <p class="additional-products__price">300 Р.</p>
               <button class="additional-products__order">Заказать</button>
             </li>
           </ul>
         </div>
-        <div class="order-all-gift gift"> <img src="img/icons/icon-gift.svg" alt="gift" width="78" height="80">
+        <div class="order-all-gift gift"> <img class="gift__img" src="img/icons/icon-gift.svg" alt="gift" width="78" height="80">
           <p class="gift__text">Закажите все
             <br> и получите чехол для
             <br> кота в подарок!</p>
@@ -247,28 +253,67 @@
       </section>
       <!-- Вербовка партнёров и инвесторов -->
       <div class="partnership">
-        <p class="partnership__title"> приглашаем
+        <div class="partnership__wrapper">
+          <p class="partnership__title"> приглашаем
           <br /> к сотрудничеству
           <br /> дилеров! </p>
-        <p class="adress"> ул. Большая
-          <br /> Конюшенная, д. 19/8 <span class="city">Санкт-Петербург</span> </p>
+        <p class="partnership__adress"> ул. Большая
+          <br /> Конюшенная, д. 19/8 <br> <span class="city">Санкт-Петербург</span>
+        </p>
+        </div>
       </div>
       <!-- Карта с отображением нашей организации -->
       <div class="location"> <img src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57" height="53" class="location__organization-logo"
         /> </div>
     </main>
     <footer class="footer">
-      <div class="footer__text-logo">
-        <a href="index.html"><img src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Cat Energy" /></a>
-      </div>
+      <div class="footer__wrapper">
+        <a class="footer__text-logo" href="index.html">
+          <img class="footer__text-logo-img" src="img/logo/cat-e__logo-text.svg" width="128" height="24" alt="Cat Energy"/>
+        </a>
       <!-- Подвал : наш логотип, соц-сети и Html academy -->
-      <div class="footer__social">
-        <a href="#"><img src="img/icons/icon_vk.svg" width="25" height="17" alt="Vkontakte" /></a>
-        <a href="#"><img src="img/icons/icon_inst.svg" width="16" height="16" alt="Instagram" /></a>
-        <a href="#"><img src="img/icons/icon_facebook.svg" width="20" height="18" alt="Facebook" /></a>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://vk.com/doctype_redfox39" target="_blank">
+             <!-- <svg class="social__icon sicial__item-vk" width="22" height="12">
+                <use xlink:href="img/icons/icon_vk.svg"/>
+              </svg>-->
+              <img class="social__icon social__icon--vk" src="img/icons/icon_vk.svg" width="25" height="17" alt="Vkontakte" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.instagram.com/blake_moore_fox_666" target="_blank">
+              <!--<svg class="social__icon social__icon-inst" width="16" height="16">
+                <use href="img/icons/icon_inst.svg"/>
+              </svg>-->
+              <img class="social__icon social__icon--inst" src="img/icons/icon_inst.svg" width="16" height="16" alt="Instagram" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.facebook.com/REDFFOX39" target="_blank">
+              <!--<svg class="social__icon sicial__item-fb" width="10" height="19">
+                <use href="img/icons/icon_facebook.svg"/>
+              </svg>-->
+              <img class="social__icon social__icon--fb" src="img/icons/icon_facebook.svg" width="20" height="18" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="footer__html-academy-logo"> <a class="footer__html-academy-link" href="https://htmlacademy.ru/" target=".blank"><span>HTML Academy</span><img src="img/logo/html-academy__logo.svg" width="27" height="34" alt="Html Academy" /></a>        </div>
+      <div class="footer__html-academy-copyright"><!-- Все права принадлежат REDFOX39 inc. -->
+        <a class="footer__html-academy__link" href="https://htmlacademy.ru/" target="_blank">
+          HTML Academy
+        </a>
+        <a class="footer__html-academy__link-logo" href="https://htmlacademy.ru/" target="_blank">
+         <!-- <svg class="html-academy-logo" width="60" height="80">
+            <use href="img/logo/html-academy__logo.svg"/>
+          </svg>-->
+          <img class="html-academy-logo" src="img/logo/html-academy__logo.svg" width="27" height="34" alt="Html Academy" />
+        </a>
+      </div>
+      </div>
     </footer>
+    <script src="js/nav-button.js"></script>
   </body>
 
 </html>

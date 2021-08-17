@@ -1,0 +1,24 @@
+.form__send-button-wrapper {
+  @include container();
+}
+
+.form__send-button {
+  font-family: "Oswald Regular","Arial",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-color;
+  background-color: $light-green;
+  border: 0;
+  text-transform: uppercase;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.form__required-notify {
+  font-family: "Arial",sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-color;
+  text-align: center;
+}
