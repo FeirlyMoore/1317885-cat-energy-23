@@ -6,6 +6,10 @@
   /* Outline */
   /*outline: 5px solid blue;
   outline-offset: -5px;*/
+
+  .nav-list__item-index {
+  background-color: $main-color;
+  }
 }
 
 .partnership__wrapper {
@@ -30,3 +34,4 @@
   line-height: 20px;
   margin: 0 20px 0 auto;
 }
+
