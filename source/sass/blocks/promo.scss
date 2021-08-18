@@ -1,0 +1,12 @@
+.promo {
+  @include container();
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  margin-bottom: 22px;
+  background: top/320px 302px no-repeat url("../img/logo/index-background-mobile.jpg");
+
+  /* Outline */
+  /*outline: 5px solid orangered;
+  outline-offset: -5px;*/
+}

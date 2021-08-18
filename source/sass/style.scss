@@ -1,1 +1,57 @@
-// Начните писать стили здесь
+/* Fonts */
+
+@import "global/fonts.scss";
+
+/* Global */
+
+@import "global/variables.scss";
+@import "global/normalize";
+@import "global/mixins.scss";
+
+/* Blocks */
+
+//Header
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/header-logo.scss";
+@import "blocks/nav-toggle-button.scss";
+@import "blocks/navigation.scss";
+//@import"blocks/";
+//@import"blocks/";
+//@import"blocks/";
+
+/* Individual styles */
+
+//index
+@import "blocks/promo.scss";
+@import "blocks/promo-title.scss";
+@import "blocks/promo-img.scss";
+@import "blocks/promo-button.scss";
+@import "blocks/privileges.scss";
+@import "blocks/privileges-inner.scss";
+@import "blocks/how-it-work.scss";
+@import "blocks/cat-change.scss";
+//catalog
+@import "blocks/catalog-title.scss";
+@import "blocks/products-wrapper.scss";
+@import "blocks/catalog-element.scss";
+@import "blocks/catalog-element_show-all.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/order-all-gift-block.scss";
+//form
+@import "blocks/form.scss";
+@import "blocks/pet-data_program-selection.scss";
+@import "blocks/form-fieldset.scss";
+@import "blocks/owner-data.scss";
+@import "blocks/comment-form.scss";
+@import "blocks/form-additional-products.scss";
+@import "blocks/send-form_button.scss";
+//Footer
+@import "blocks/partnership.scss";
+@import "blocks/location.scss";
+@import "blocks/footer.scss";
+
+//@import"";
+//@import"blocks/";
+
+//<!DOCTYPE Liky>

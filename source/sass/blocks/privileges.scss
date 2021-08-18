@@ -1,0 +1,5 @@
+.privileges {
+  @include container();
+  display: flex;
+  justify-content: center;
+}

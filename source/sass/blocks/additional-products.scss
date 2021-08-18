@@ -1,0 +1,91 @@
+.additional-products {
+  @include container();
+  margin-bottom: 34px;
+}
+
+.additional-products__title {
+  @include container();
+  position: relative;
+  display: inline-block;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $pre-black-color;
+  font-weight: 400;
+  background-color: $main-color;
+  margin: 0 0 35px;
+  padding: 0 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 3px;
+    top: 14px;
+    right: 0;
+    background-color: $light-green;
+  }
+}
+
+.additional-products__wrapper {
+  @include container();
+  padding: 0 20px;
+}
+
+.additional-products__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 37px;
+}
+
+.additional-products__item {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid $special_grey;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.additional-products__item-title {
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special_dark-grey-2;
+  width: 100%;
+  margin: 13px 0;
+}
+
+.additional-products__quantity {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+  margin: 0;
+}
+
+.additional-products__price {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+  margin: 0 0 0 auto;
+}
+
+.additional-products__order {
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-color;
+  text-align: center;
+  width: 100%;
+  background-color: $light-green;
+  border: 0;
+  padding: 10px 0;
+  margin-bottom: 17px;
+  margin-top: 15px;
+}

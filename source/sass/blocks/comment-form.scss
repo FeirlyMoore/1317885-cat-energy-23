@@ -1,0 +1,21 @@
+.form__fieldset--data-comment {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 49.4%;
+    top: 14px;
+    right: 0;
+    height: 3px;
+    background-color: $light-green;
+  }
+}
+
+.form__textarea {
+  @include form-element();
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 150px;
+  border: 1px solid $light-gray-border-2;
+  margin-bottom: 20px;
+  padding: 12px;
+}

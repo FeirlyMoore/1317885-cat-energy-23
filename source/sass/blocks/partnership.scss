@@ -1,0 +1,36 @@
+.partnership {
+  @include container();
+  height: 114px;
+  background-color: $footer-gray;
+
+  /* Outline */
+  /*outline: 5px solid blue;
+  outline-offset: -5px;*/
+
+  .nav-list__item-index {
+    background-color: $main-color;
+  }
+}
+
+.partnership__wrapper {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.partnership__title {
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 auto 0 20px;
+  color: $pre-black-color;
+}
+
+.partnership__adress {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 20px 0 auto;
+}

@@ -1,0 +1,22 @@
+.form__fieldset--data-additionally {
+  margin-bottom: 27px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 42.5%;
+    top: 14px;
+    right: 0;
+    height: 3px;
+    background-color: $light-green;
+  }
+
+  & .form__label {
+    padding-top: 5px;
+    margin-bottom: 7px;
+  }
+}
+
+.form__checkbox-input {
+  margin-right: 15px;
+}
