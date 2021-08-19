@@ -1,0 +1,24 @@
+.main-header {
+  @include container();
+  align-items: center;
+  height: fit-content;
+  background-color: $main-color;
+
+  /* Outline */
+  /*outline: 5px solid orangered;
+  outline-offset: -5px;*/
+}
+
+.main-header__wrapper {
+  width: 192px;
+  height: 66px;
+  margin: 0;
+  padding: 0 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Outline */
+  /* outline: 5px solid cyan;
+  outline-offset: -5px;*/
+}

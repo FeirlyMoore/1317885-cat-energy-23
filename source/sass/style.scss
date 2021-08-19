@@ -7,51 +7,71 @@
 @import "global/variables.scss";
 @import "global/normalize";
 @import "global/mixins.scss";
+//Сommon element styles
+@import "global/page.scss";
+@import "global/scroll.scss";
 
 /* Blocks */
 
 //Header
-@import "blocks/page.scss";
-@import "blocks/header.scss";
-@import "blocks/header-logo.scss";
-@import "blocks/nav-toggle-button.scss";
-@import "blocks/navigation.scss";
-//@import"blocks/";
-//@import"blocks/";
-//@import"blocks/";
+@import "blocks/header/header.scss";
+@import "blocks/header/header-logo.scss";
+@import "blocks/header/nav-toggle-button.scss";
+@import "blocks/header/navigation.scss";
+@import "blocks/header/navigation-list.scss";
 
 /* Individual styles */
 
 //index
-@import "blocks/promo.scss";
-@import "blocks/promo-title.scss";
-@import "blocks/promo-img.scss";
-@import "blocks/promo-button.scss";
-@import "blocks/privileges.scss";
-@import "blocks/privileges-inner.scss";
-@import "blocks/how-it-work.scss";
-@import "blocks/cat-change.scss";
+@import "blocks/index/promo.scss";
+@import "blocks/index/promo-title.scss";
+@import "blocks/index/promo-img.scss";
+@import "blocks/index/promo-button.scss";
+@import "blocks/index/privileges.scss";
+@import "blocks/index/privileges-inner.scss";
+@import "blocks/index/privileges-item.scss";
+@import "blocks/index/how-it-work.scss";
+@import "blocks/index/how-it-work-list.scss";
+@import "blocks/index/how-it-work-item.scss";
+@import "blocks/index/cat-change.scss";
+@import "blocks/index/cat-change-description.scss";
+@import "blocks/index/cat-change-result.scss";
+@import "blocks/index/cat-change-example.scss";
+@import "blocks/index/cat-change-img-container.scss";
+@import "blocks/index/cat-change-range-container.scss";
 //catalog
-@import "blocks/catalog-title.scss";
-@import "blocks/products-wrapper.scss";
-@import "blocks/catalog-element.scss";
-@import "blocks/catalog-element_show-all.scss";
-@import "blocks/additional-products.scss";
-@import "blocks/order-all-gift-block.scss";
+@import "blocks/catalog/products-wrapper.scss";
+@import "blocks/catalog/product-item.scss";
+@import "blocks/catalog/product-item-description.scss";
+@import "blocks/catalog/product-item-order-button.scss";
+@import "blocks/catalog/product-item-show-all.scss";
+@import "blocks/catalog/additional-products.scss";
+@import "blocks/catalog/additional-products-title.scss";
+@import "blocks/catalog/additional-products-wrapper.scss";
+@import "blocks/catalog/additional-products-list.scss";
+@import "blocks/catalog/additional-products-item.scss";
+@import "blocks/catalog/order-all-gift-block.scss";
 //form
-@import "blocks/form.scss";
-@import "blocks/pet-data_program-selection.scss";
-@import "blocks/form-fieldset.scss";
-@import "blocks/owner-data.scss";
-@import "blocks/comment-form.scss";
-@import "blocks/form-additional-products.scss";
-@import "blocks/send-form_button.scss";
+@import "blocks/form/form.scss";
+@import "blocks/form/form-wrapper.scss";
+@import "blocks/form/form-item.scss";
+@import "blocks/form/form-list.scss";
+@import "blocks/form/form-choise-programm.scss";
+@import "blocks/form/form-fieldset.scss";
+@import "blocks/form/form-fieldset-owner-data.scss";
+@import "blocks/form/form-fieldset-comment-form.scss";
+@import "blocks/form/form-additional-products.scss";
+@import "blocks/form/form-send-button.scss";
 //Footer
-@import "blocks/partnership.scss";
-@import "blocks/location.scss";
-@import "blocks/footer.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/footer-partnership.scss";
+@import "blocks/footer/footer-location-map.scss";
+@import "blocks/footer/footer-wrapper.scss";
+@import "blocks/footer/footer-text-logo.scss";
+@import "blocks/footer/footer-social.scss";
+@import "blocks/footer/footer-html-academy-copyright.scss";
 
-//@import"";
-//@import"blocks/";
+//@import "";
+//@import "blocks/";
 
 //<!DOCTYPE Liky>

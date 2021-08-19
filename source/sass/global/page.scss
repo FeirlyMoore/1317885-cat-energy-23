@@ -13,7 +13,18 @@
   color: $black-color;
 }
 
-.visualy-hidden {
+.main-title {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $pre-black-color;
+  margin: 0 auto 28px;
+  padding: 14px 20px 0;
+  border-top: 1px solid $light-gray-border;
+}
+
+.hidden {
   display: none;
   /*position: absolute;
   clip: rect(0 0 0 0);
@@ -22,7 +33,7 @@
   margin: -1px;*/
 }
 
-.visualy-hidden--2 {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

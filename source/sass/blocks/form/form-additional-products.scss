@@ -1,0 +1,63 @@
+.form__fieldset--data-additionally {
+  margin-bottom: 27px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 42.5%;
+    top: 14px;
+    right: 0;
+    height: 3px;
+    background-color: $light-green;
+  }
+
+  & .form__label {
+    padding-top: 5px;
+    margin-bottom: 7px;
+  }
+}
+
+.form__checkbox-input {
+  margin-right: 15px;
+}
+
+.form__checkbox-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid $special_grey;
+  background-color: $main-color;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+  margin-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 19px;
+    margin: -10px 0 0 -11px;
+    background-image: url("../img/icons/checkbox-icon.svg");
+    transform: scale(0);
+    transition: transform 0.2s ease;
+  }
+}
+
+.form__checkbox-input:checked ~ .form__checkbox-icon::before {
+  transform: scale(1);
+}
+
+.form__checkbox-input:disabled ~ .form__label-text {
+  opacity: 0.3;
+}
+
+.form__checkbox-input:disabled:checked ~ .form__checkbox-icon::before {
+  opacity: 0.3;
+  transform: scale(1);
+}
+
+.form__checkbox-input:hover ~ .form__checkbox-icon {
+  border-color: $input-hover-color;
+}

@@ -1,0 +1,38 @@
+.cat-change__range-container {
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cat-change__range__before {
+  @include uppercase();
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cat-change__range {
+  width: 82px;
+  height: 12px;
+  border: 1px solid $special_grey;
+  background-color: $main-color;
+  border-radius: 6px;
+  margin-left: 20px;
+  margin-right: 17px;
+}
+
+.cat-change__range__after {
+  @include uppercase();
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}

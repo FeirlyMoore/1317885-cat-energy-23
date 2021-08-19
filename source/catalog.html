@@ -28,7 +28,7 @@
       </div>
       <!-- Навигация -->
       <nav class="main-nav main-nav--closed">
-        <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню"> <span class="visualy-hidden">Открыть меню</span> </button>
+        <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню"> <span class="hidden">Открыть меню</span> </button>
         <ul class="nav-list nav-list--style">
           <li class="nav-list__item nav-list__item-index"><a href="index.html">Главная</a></li>
           <li class="nav-list__item nav-list__item--current"><a href="catalog.html">Каталог продукции</a></li>
@@ -243,9 +243,11 @@
         <div class="order-all-gift gift"> <img class="gift__img" src="img/icons/icon-gift.svg" alt="gift" width="78" height="80">
           <p class="gift__text">Закажите все
             <br> и получите чехол для
-            <br> кота в подарок!</p>
+            <br> кота в подарок! </p>
         </div>
       </section>
+    </main>
+    <footer class="footer">
       <!-- Вербовка партнёров и инвесторов -->
       <div class="partnership">
         <div class="partnership__wrapper">
@@ -260,12 +262,10 @@
       <!-- Карта с отображением нашей организации -->
       <div class="location"> <img src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57" height="53" class="location__organization-logo"
         /> </div>
-    </main>
-    <footer class="footer">
+      <!-- Подвал : наш логотип, соц-сети и Html academy -->
       <div class="footer__wrapper">
         <a class="footer__text-logo" href="index.html"> <img class="footer__text-logo-img" src="img/logo/cat-e__logo-text.svg" width="128" height="24" alt="Cat Energy"
           /> </a>
-        <!-- Подвал : наш логотип, соц-сети и Html academy -->
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -303,6 +303,8 @@
         </div>
       </div>
     </footer>
+    <progress id="page_progress" class="page-progress" min="0" max="100" value="0" title="Прогресс прокрутки страницы"></progress>
+    <script src="js/scroll.js"></script>
     <script src="js/nav-button.js"></script>
   </body>
 

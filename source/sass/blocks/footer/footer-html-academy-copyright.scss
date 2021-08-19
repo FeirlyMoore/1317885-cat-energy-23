@@ -1,0 +1,24 @@
+.footer__html-academy-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 103px;
+}
+
+.footer__html-academy__link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+.footer__html-academy__link-logo {
+  width: 55px;
+  height: 80px;
+}
+
+.html-academy-logo {
+  position: relative;
+  left: 50%;
+  padding-top: 23px;
+}

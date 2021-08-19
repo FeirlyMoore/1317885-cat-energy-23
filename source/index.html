@@ -28,7 +28,7 @@
       </div>
       <!-- Навигация -->
       <nav class="main-nav main-nav--closed">
-        <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню"> <span class="visualy-hidden">Открыть меню</span> </button>
+        <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню"> <span class="hidden">Открыть меню</span> </button>
         <ul class="nav-list nav-list--style">
           <li class="nav-list__item nav-list__item-index nav-list__item--current"><a href="index.html">Главная</a></li>
           <li class="nav-list__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -122,7 +122,7 @@
         </article>
         <div class="cat-change__example">
           <div class="cat-change__img-container"> <img class="cat-change__img" src="img/cat-change/cat-fat.png" width="311" height="232" alt="Fat cat"
-            /> <img class="visualy-hidden" src="img/cat-change/cat-skinny.png" width="311" height="232" alt="Skinny cat"
+            /> <img class="hidden" src="img/cat-change/cat-skinny.png" width="311" height="232" alt="Skinny cat"
             /> </div>
           <div class="cat-change__range-container">
             <label> <span class="cat-change__range__before">было</span>
@@ -131,8 +131,10 @@
           </div>
         </div>
       </div>
+    </main>
+    <footer class="footer">
       <!-- Вербовка партнёров и инвесторов -->
-      <div class="partnership">
+      <div class="partnership index-partnership">
         <div class="partnership__wrapper">
           <p class="partnership__title"> приглашаем
             <br /> к сотрудничеству
@@ -143,14 +145,12 @@
         </div>
       </div>
       <!-- Карта с отображением нашей организации -->
-      <div class="location"> <img class="location__organization-logo" src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57"
-        height="53" /> </div>
-    </main>
-    <footer class="footer">
+      <div class="location"> <img src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57" height="53" class="location__organization-logo"
+        /> </div>
+      <!-- Подвал : наш логотип, соц-сети и Html academy -->
       <div class="footer__wrapper">
         <a class="footer__text-logo" href="index.html"> <img class="footer__text-logo-img" src="img/logo/cat-e__logo-text.svg" width="128" height="24" alt="Cat Energy"
           /> </a>
-        <!-- Подвал : наш логотип, соц-сети и Html academy -->
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -188,6 +188,8 @@
         </div>
       </div>
     </footer>
+    <progress id="page_progress" class="page-progress" min="0" max="100" value="0" title="Прогресс прокрутки страницы"></progress>
+    <script src="js/scroll.js"></script>
     <script src="js/nav-button.js"></script>
   </body>
 

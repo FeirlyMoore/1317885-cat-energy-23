@@ -1,0 +1,70 @@
+.program-selection {
+  border: 1px solid $catalog-border-color;
+  margin-bottom: 28px;
+}
+
+.choise-programm {
+  padding: 27px 0;
+  margin-bottom: 0;
+
+  & .list-item {
+    margin-bottom: 25px;
+  }
+
+  & :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__radio-input {
+  margin: 0 15px 0 0;
+}
+
+.form__radio-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid $special_grey;
+  background-color: $main-color;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+  margin-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: -9px 0 0 -9px;
+    background-color: $light-green;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+  }
+}
+
+.form__radio-input:checked ~ .form__radio-icon::before {
+  transform: scale(1);
+}
+
+.form__radio-input:disabled:checked ~ .form__radio-icon::before {
+  transform: scale(1);
+  opacity: 0.3;
+  border-color: $input-hover-color;
+}
+
+.form__radio-input:disabled ~ .form__radio-icon::before {
+  opacity: 0.3;
+  transform: scale(0);
+}
+
+.form__radio-input:disabled ~ .form__label-text {
+  opacity: 0.3;
+}
+
+.form__radio-input:hover ~ .form__radio-icon {
+  border-color: $input-hover-color;
+}

@@ -1,0 +1,24 @@
+.how-it-work__item {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.how-it-work__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  margin: 0;
+}
+
+.how-it-work__background-number {
+  @include hidden();
+}
+
+.how-it-work__img {
+  margin-right: 20px;
+  background-color: $light-green;
+  padding: 5px;
+  width: 50px;
+  height: auto;
+}

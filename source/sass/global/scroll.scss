@@ -1,0 +1,22 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 3px;
+  appearance: none;
+  border: 0;
+}
+
+.page-progress::-webkit-progress-bar {
+  background: $special_dark-grey-2;
+}
+
+.page-progress::-webkit-progress-value {
+  background: $light-green;
+}
