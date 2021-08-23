@@ -8,6 +8,10 @@
   border: 0;
   cursor: pointer;
   background-color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed .nav-toggle-button::before {

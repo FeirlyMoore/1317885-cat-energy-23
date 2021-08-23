@@ -26,11 +26,6 @@
 
 .hidden {
   display: none;
-  /*position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;*/
 }
 
 .visually-hidden {
@@ -44,4 +39,22 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-visible {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only), (min-width: $desktop-width-only) {
+  .table-visible {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .desktop-visible {
+    display: none;
+  }
 }

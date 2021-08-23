@@ -2,6 +2,10 @@
   padding: 0;
   min-width: 280px;
   width: 100%;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
 }

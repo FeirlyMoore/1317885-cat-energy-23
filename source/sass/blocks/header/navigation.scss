@@ -2,6 +2,14 @@
   @include container();
   display: block;
   height: fit-content;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 440px;
+    box-sizing: border-box;
+    margin: 0 0 0 80px;
+  }
 }
 
 

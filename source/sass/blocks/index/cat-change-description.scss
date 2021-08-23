@@ -1,6 +1,10 @@
 .cat-change__description {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
 }
 
 .cat-change__title {
@@ -11,6 +15,13 @@
   color: $pre-black-color;
   margin: 0 0 23px;
   padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 42px 0 0 30px;
+    margin-bottom: 65px;
+  }
 }
 
 .cat-change__text {
@@ -20,4 +31,12 @@
   color: $special_dark-grey;
   margin: 0 0 25px;
   padding-right: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 700px;
+    padding: 0 30px;
+    margin-bottom: 52px;
+  }
 }

@@ -11,10 +11,17 @@
   height: 3px;
   appearance: none;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 4px;
+  }
 }
 
 .page-progress::-webkit-progress-bar {
+  /*background: $main-color;*/
+  /*background: transparent;*/
   background: $special_dark-grey-2;
+  opacity: 1;
 }
 
 .page-progress::-webkit-progress-value {

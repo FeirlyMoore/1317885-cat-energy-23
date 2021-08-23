@@ -2,7 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 103px;
+  height: 78px;
+
+  @media (min-width: $tablet-width) {
+    height: 103px;
+  }
 }
 
 .footer__html-academy__link {
@@ -10,15 +14,26 @@
   font-size: 16px;
   line-height: 16px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }
 
 .footer__html-academy__link-logo {
-  width: 55px;
-  height: 80px;
+  display: flex;
+  width: fit-content;
+  height: auto;
+
+  /*@media (min-width: $tablet-width) {}*/
 }
 
 .html-academy-logo {
-  position: relative;
-  left: 50%;
-  padding-top: 23px;
+  /*//position: relative;
+  left: 50%;*/
+  width: 27px;
+  height: 34px;
+  color: $special_grey-2;
+
+  /*@media (min-width: $tablet-width) {}*/
 }

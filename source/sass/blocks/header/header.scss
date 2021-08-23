@@ -4,13 +4,18 @@
   height: fit-content;
   background-color: $main-color;
 
-  /* Outline */
-  /*outline: 5px solid orangered;
-  outline-offset: -5px;*/
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0 30px;
+    margin: 20px auto;
+  }
 }
 
 .main-header__wrapper {
-  width: 192px;
+  width: 76.56%;
   height: 66px;
   margin: 0;
   padding: 0 20px;
@@ -18,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
 
-  /* Outline */
-  /* outline: 5px solid cyan;
-  outline-offset: -5px;*/
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+  }
 }

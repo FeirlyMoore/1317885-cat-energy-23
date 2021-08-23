@@ -3,9 +3,17 @@
   width: 280px;
   height: 270px;
   margin: auto;
+  overflow: hidden;
+  clear: none;
+  box-sizing: border-box;
   z-index: 1;
 
-  /* Outline */
-  /*outline: 5px solid lime;
-  outline-offset: -5px;*/
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    left: 75px;
+    top: 240px;
+    height: 610px;
+    width: 693px;
+  }
 }

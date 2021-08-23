@@ -4,17 +4,44 @@
   padding: 29px 20px 20px;
   margin-bottom: 22px;
   background-color: $footer-gray;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding: 75px 50px 62px 53px;
+    margin-bottom: 28px;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .privileges__item-img {
   position: absolute;
   top: 22px;
   left: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    top: 80px;
+    left: auto;
+    right: 60px;
+  }
 }
 
 .privileges__item-img--2 {
   top: 21px;
   left: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 269px;
+    height: 200px;
+    top: 91px;
+    left: auto;
+    right: 28px;
+  }
 }
 
 .privileges__title {
@@ -26,6 +53,14 @@
   font-weight: 400;
   padding-left: 72px;
   margin: 0 0 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 37px;
+    width: 380px;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .privileges__description {
@@ -36,6 +71,14 @@
   border-bottom: 1px solid $footer-gray-border;
   margin: 0 0 20px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 380px;
+    border-bottom: none;
+    margin-bottom: 35px;
+  }
 }
 
 .catalog-button {
@@ -47,8 +90,17 @@
   text-decoration: none;
   display: block;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .icon-arrow {
   margin: 0 0 2px 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 2px 25px;
+  }
 }

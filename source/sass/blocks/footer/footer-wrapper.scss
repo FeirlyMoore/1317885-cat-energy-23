@@ -3,4 +3,11 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

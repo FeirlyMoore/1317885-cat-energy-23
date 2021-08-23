@@ -1,6 +1,6 @@
 let scrollLine = document.getElementById("page_progress");
 
-window.onscroll = function() {
+window.onscroll = function scrollFunc() {
     let pageHeight = document.documentElement.scrollHeight;
     let innerHeight = window.innerHeight;
     let scroll = window.pageYOffset;
@@ -11,4 +11,13 @@ window.onscroll = function() {
     } else {
         scrollLine.value = progressPercent;
     }
+    return progressPercent
 }
+
+/*window.addEventListener("resize", function() {
+  let funcNum = scrollFunc();
+
+  if (funcNum == NaN) {
+    scrollLine.value = 0;
+  }
+});*/

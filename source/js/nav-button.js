@@ -11,4 +11,11 @@ navToggle.onclick = function () {
   }
 }
 
+/*let innerWidth = window.innerWidth;
+
+if (innerWidth >= 768 && nav.classList.contains("main-nav--closed")) {
+    nav.classList.remove("main-nav--closed");
+    nav.classList.add("main-nav--opened");
+}*/
+
 //<!DOCTYPE Liky>

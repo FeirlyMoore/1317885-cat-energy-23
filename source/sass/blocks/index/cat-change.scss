@@ -5,4 +5,11 @@
   align-items: center;
   padding: 0 0 34px;
   background-color: $light-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 70px;
+    border-top: 1px solid $light-gray-border;
+    background-color: $main-color;
+    background-image: linear-gradient($main-color 0%, $main-color 57%, $footer-gray 57%, $footer-gray 100%);
+  }
 }
