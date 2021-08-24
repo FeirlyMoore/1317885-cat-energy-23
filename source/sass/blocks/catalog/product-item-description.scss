@@ -1,0 +1,38 @@
+.item-description {
+  padding: 0;
+  margin: 0;
+}
+
+.products__title {
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $pre-black-color;
+  width: 90px;
+  margin: 0 0 13px;
+}
+
+.description-table {
+  width: 142px;
+  border-collapse: collapse;
+}
+
+.description-table__row {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.description-table__cell {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+  padding: 0;
+
+  &:nth-child(2) {
+    text-align: right;
+  }
+}

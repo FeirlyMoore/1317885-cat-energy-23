@@ -1,0 +1,21 @@
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  padding: 11px 0;
+
+  /*@media (min-width: $tablet-width) {}*/
+}
+
+.main-header__logo-2 {
+  position: relative;
+  top: -1px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header-logo-img-2 {
+  /*@media (min-width: $tablet-width) {}*/
+}

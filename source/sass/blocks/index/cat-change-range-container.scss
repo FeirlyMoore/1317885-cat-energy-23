@@ -1,0 +1,59 @@
+.cat-change__range-container {
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  /*@media (min-width: $tablet-width) {}*/
+}
+
+.cat-change__range-label {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 570px;
+    justify-content: space-between;
+    align-items: center;
+    color: $black-color;
+  }
+}
+
+.cat-change__range-button {
+  @include uppercase();
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    border-bottom: 1px dotted $black-color;
+    padding-bottom: 6px;
+
+    &:hover {
+      transition: border-bottom 0.3s ease;
+      border-bottom: 1px solid rgba($black-color, 0.4);
+    }
+  }
+}
+
+.cat-change__range {
+  width: 82px;
+  height: 12px;
+  border: 1px solid $special_grey;
+  background-color: $main-color;
+  border-radius: 6px;
+  margin-left: 20px;
+  margin-right: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    border: 0;
+  }
+}

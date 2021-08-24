@@ -1,0 +1,19 @@
+.promo {
+  @include container();
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  margin-bottom: 22px;
+  background: top/320px 302px no-repeat url("../img/logo/index-background-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    background: 0 0;
+    padding-left: 120px;
+    min-height: 768px;
+    position: relative;
+    margin-bottom: 60px;
+  }
+}

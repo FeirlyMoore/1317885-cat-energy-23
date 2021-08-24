@@ -1,0 +1,19 @@
+.promo__img {
+  position: relative;
+  width: 280px;
+  height: 270px;
+  margin: auto;
+  overflow: hidden;
+  clear: none;
+  box-sizing: border-box;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    left: 75px;
+    top: 240px;
+    height: 610px;
+    width: 693px;
+  }
+}

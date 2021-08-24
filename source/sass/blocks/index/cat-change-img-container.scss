@@ -1,0 +1,23 @@
+.cat-change__img-container {
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+  margin: 0 20px 0 20px;
+
+  /*@media (min-width: $tablet-width) {}*/
+}
+
+.cat-change__img {
+  position: relative;
+  margin-top: 37px;
+  margin-bottom: 25px;
+  //display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: 517px;
+    left: 18px;
+    top: 3px;
+    margin: 53px auto 20px;
+  }
+}

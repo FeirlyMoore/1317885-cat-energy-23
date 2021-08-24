@@ -1,0 +1,29 @@
+.main-header {
+  @include container();
+  align-items: center;
+  height: fit-content;
+  background-color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0 30px;
+    margin: 20px auto;
+  }
+}
+
+.main-header__wrapper {
+  width: 76.56%;
+  height: 66px;
+  margin: 0;
+  padding: 0 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+  }
+}

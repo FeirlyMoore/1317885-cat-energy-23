@@ -1,0 +1,38 @@
+.program-form {
+  @include container();
+  margin-bottom: 30px;
+}
+
+.main-subtitle {
+  @include uppercase();
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $pre-black-color;
+  margin: 0 auto 38px;
+  padding: 0 20px;
+}
+
+.form__text-input {
+  @include form-element();
+  flex-grow: 1;
+  border: 1px solid $light-gray-border-2;
+  box-sizing: border-box;
+  margin-left: 15px;
+  padding: 12px;
+}
+
+.form__label {
+  @include form-element();
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .form__label-checkbox {
+    color: $black-color;
+  }
+
+  .form__label-radio {
+    color: $special_dark-grey-2;
+  }
+}

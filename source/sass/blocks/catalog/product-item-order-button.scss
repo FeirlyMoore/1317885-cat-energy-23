@@ -1,0 +1,16 @@
+.order-button {
+  @include uppercase();
+  display: block;
+  background-color: $light-green;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-color;
+  flex-grow: 1;
+  border: 0;
+  padding: 10px 0;
+  margin-bottom: 24px;
+  text-align: center;
+  width: 280px;
+  box-sizing: border-box;
+}

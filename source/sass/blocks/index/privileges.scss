@@ -1,0 +1,9 @@
+.privileges {
+  @include container();
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+}
