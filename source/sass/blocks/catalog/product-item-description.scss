@@ -12,6 +12,13 @@
   color: $pre-black-color;
   width: 90px;
   margin: 0 0 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 130px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
 }
 
 .description-table {
@@ -23,6 +30,7 @@
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
+  border-bottom: 1px solid $special_grey;
 }
 
 .description-table__cell {

@@ -5,9 +5,13 @@
 
   @media (min-width: $tablet-width) {
     display: inline;
-    width: auto;
-    padding: 15px 26px 15px 26px;
-    margin: 0 auto 0 0;
+    width: 246px;
+    padding: 16px 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
   }
 }
 

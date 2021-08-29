@@ -4,6 +4,7 @@
   padding: 29px 20px 20px;
   margin-bottom: 22px;
   background-color: $footer-gray;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
@@ -13,6 +14,16 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    padding: 76px 50px 62px;
+    margin: 0 80px 0 0;
+
+    &:last-child {
+      margin: 0;
     }
   }
 }
@@ -29,6 +40,14 @@
     left: auto;
     right: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 111px;
+    top: 10%;
+    left: 9%;
+    right: 60px;
+  }
 }
 
 .privileges__item-img--2 {
@@ -40,6 +59,14 @@
     height: 200px;
     top: 91px;
     left: auto;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+    height: 100px;
+    top: 12%;
+    left: 5%;
     right: 28px;
   }
 }
@@ -61,6 +88,12 @@
     padding-left: 0;
     margin-bottom: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 165px;
+    width: auto;
+    margin-bottom: 74px;
+  }
 }
 
 .privileges__description {
@@ -79,6 +112,13 @@
     border-bottom: none;
     margin-bottom: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 2px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .catalog-button {
@@ -94,6 +134,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
   }
 }
 

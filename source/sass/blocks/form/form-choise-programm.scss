@@ -1,6 +1,10 @@
 .program-selection {
   border: 1px solid $catalog-border-color;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .choise-programm {
@@ -13,6 +17,11 @@
 
   & :last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $catalog-border-color;
+    padding: 25px 30px 25px 30px;
   }
 }
 

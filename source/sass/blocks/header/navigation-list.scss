@@ -27,7 +27,7 @@
   font-family: "Oswald Medium", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
-  color: $pre-black-color;
+  color: $black-color;
   text-decoration: none;
   white-space: nowrap;
   display: block;
@@ -44,13 +44,43 @@
     width: fit-content;
     font-family: "Oswald Regular", "Arial", sans-serif;
     font-size: 18px;
-    line-height: 25px;
-    color: $special_dark-grey-2;
+    line-height: 24px;
     border-bottom: none;
     border-top: none;
+    padding: 23px 0;
 
     &:last-child {
       border-bottom: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 35px;
+    margin-top: -2px;
+    padding: 20px 0;
+    color: $main-color;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-list-index {
+  .nav-list__link {
+    @media (min-width: $desktop-width) {
+      color: inherit;
+    }
+  }
+
+  .nav-list__item--current {
+    .nav-list__link {
+      @media (min-width: $desktop-width) {
+        padding-bottom: 5px;
+        border-bottom: 2px solid $main-color;
+      }
     }
   }
 }

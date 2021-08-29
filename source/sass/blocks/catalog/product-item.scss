@@ -8,8 +8,36 @@
   padding: 0 19px;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 430px;
+    background-color: $footer-gray;
+    flex-direction: column;
+    align-items: center;
+    border-top: none;
+    padding-bottom: 17px;
+    padding-top: 165px;
+    margin-top: 90px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-bottom: 50px;
+    margin-right: 0;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
 }
 
 .products__img {
   margin-bottom: -4px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 310px;
+  }
 }

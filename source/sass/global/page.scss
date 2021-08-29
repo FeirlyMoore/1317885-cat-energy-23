@@ -22,6 +22,34 @@
   margin: 0 auto 28px;
   padding: 14px 20px 0;
   border-top: 1px solid $light-gray-border;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 55px;
+    padding: 30px 30px 0;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 110px 0;
+    margin-bottom: 73px;
+  }
+}
+
+.main-title--form {
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 55px;
+    padding: 30px 70px 0;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 110px 0;
+    margin-bottom: 73px;
+  }
 }
 
 .hidden {
@@ -48,13 +76,15 @@
 }
 
 @media (max-width: $mobile-width-only), (min-width: $desktop-width-only) {
-  .table-visible {
+  .tablet-visible {
     display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .desktop-visible {
-    display: none;
+.desktop-visible {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: initial;
   }
 }

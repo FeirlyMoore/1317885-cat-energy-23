@@ -3,7 +3,7 @@
   width: fit-content;
   display: flex;
   flex-direction: row;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 
 
   @media (min-width: $tablet-width) {
@@ -17,6 +17,10 @@
     &:last-child {
       margin-bottom: 67px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -34,31 +38,36 @@
 }
 
 .how-it-work__background-number {
-  position: absolute;
-  font-family: $font-stack--Oswald-Regular;
-  font-size: 280px;
-  line-height: 280px;
-  color: $footer-gray;
-  z-index: -1;
+  display: none;
 
-  &.background-number-1 {
-    bottom: -5px;
-    left: 57%;
-  }
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    font-family: $font-stack--Oswald-Regular;
+    font-size: 280px;
+    line-height: 280px;
+    color: $footer-gray;
+    z-index: -1;
 
-  &.background-number-2 {
-    bottom: -5px;
-    left: 51%;
-  }
+    &.background-number-1 {
+      bottom: -5px;
+      left: 57%;
+    }
 
-  &.background-number-3 {
-    bottom: -55px;
-    left: 55%;
-  }
+    &.background-number-2 {
+      bottom: -5px;
+      left: 51%;
+    }
 
-  &.background-number-4 {
-    bottom: -55px;
-    left: 47%;
+    &.background-number-3 {
+      bottom: -55px;
+      left: 55%;
+    }
+
+    &.background-number-4 {
+      bottom: -55px;
+      left: 47%;
+    }
   }
 }
 
@@ -67,6 +76,8 @@
   background-color: $light-green;
   width: 60px;
   height: auto;
+  position: relative;
+  top: -2px;
 
   @media (min-width: $tablet-width) {
     width: 80px;

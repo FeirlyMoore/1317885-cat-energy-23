@@ -6,4 +6,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    padding: 0 40px;
+    width: fit-content;
+  }
 }
