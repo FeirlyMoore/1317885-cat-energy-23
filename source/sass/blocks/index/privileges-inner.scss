@@ -1,11 +1,21 @@
 .privileges-list {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
   min-width: 280px;
   width: 100%;
   margin: 0 20px;
-  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
   }
 }

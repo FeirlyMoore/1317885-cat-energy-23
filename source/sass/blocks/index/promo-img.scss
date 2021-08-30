@@ -1,4 +1,4 @@
-.promo__img {
+.promo__picture {
   position: relative;
   width: 280px;
   height: 270px;
@@ -11,9 +11,24 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    left: 75px;
-    top: 240px;
+    left: 30px;
+    top: 251px;
     height: 610px;
     width: 693px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    position: initial;
+    z-index: 1;
+    height: auto;
+    width: fit-content;
+    margin: -3px 0 0 -52px;
+  }
+}
+
+.promo__img {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }

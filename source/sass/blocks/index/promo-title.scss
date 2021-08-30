@@ -6,6 +6,11 @@
   @media (min-width: $tablet-width) {
     color: $black-color;
   }
+
+  @media (min-width: $desktop-width) {
+    width: fit-content;
+    order: 1;
+  }
 }
 
 .promo__title {
@@ -20,7 +25,13 @@
     color: $pre-black-color;
     text-align: left;
     width: 420px;
-    margin-bottom: 42px;
+    margin: 0 0 40px 0;
+    padding: 52px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 79px;
+    padding: 0;
   }
 }
 
@@ -36,6 +47,10 @@
     width: 420px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 49px;
+    margin: 0 0 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 53px;
   }
 }

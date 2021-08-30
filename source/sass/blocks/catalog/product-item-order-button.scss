@@ -13,4 +13,12 @@
   text-align: center;
   width: 280px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }

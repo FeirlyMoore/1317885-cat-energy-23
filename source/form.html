@@ -19,30 +19,50 @@
   </head>
 
   <body>
+    <!-- <picture class="test__picture">
+      <source srcset="test/desktop.png" media="(min-width: 1440px)">
+      <source srcset="test/tablet.png" media="(min-width: 768px)">
+      <img class="test__img" src="test/mobile.jpg" alt="">
+    </picture>
+    <style>
+      .test__img {
+        position: absolute;
+        z-index: 5;
+        pointer-events: none;
+        top: 0;
+        left: 50%;
+        pointer-events: none;
+        transform: translateX(-50%);
+        overflow: hidden;
+        opacity: 0;
+      }
+    </style> -->
     <!-- Шапка сайта : логотит, навигация ( меню ) -->
-    <header class="main-header main-header--style">
+    <header class="main-header main-header--no-index main-header--style">
       <div class="main-header__wrapper">
         <a href="index.html" class="main-header__logo main-header__logo-1">
           <picture>
-            <source srcset="img/logo/tablet-header-logo.svg" media="(min-width: 768px)">
-            <source srcset="img/logo/desktop-header-logo.svg" media="(min-width: 1200px)"> <img class="header-logo-img-1" src="img/logo/cat-e__logo.svg" alt="Logotype" /> </picture>
+            <source srcset="img/logo/desktop-header-logo.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo/tablet-header-logo.svg" media="(min-width: 768px)"> <img class="header-logo-img-1" src="img/logo/cat-e__logo.svg" alt="Logotype" /> </picture>
         </a>
         <a href="index.html" class="main-header__logo main-header__logo-2"> <img class="header-logo-img-2" src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Cat Energy"
           /> </a>
       </div>
       <!-- Навигация -->
       <nav class="main-nav main-nav--closed">
-        <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню"> <span class="hidden">Открыть меню</span> </button>
+        <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню" accesskey="b">
+        <span class="hidden">Открыть меню</span> </button>
         <ul class="nav-list nav-list--style">
-          <li class="nav-list__item nav-list__item-index"><a class="nav-list__link" href="index.html">Главная</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="nav-list__item nav-list__item--current"><a class="nav-list__link" href="form.html">Подбор программы</a></li>
+          <li class="nav-list__item nav-list__item-index"> <a class="nav-list__link" href="index.html">Главная</a> </li>
+          <li class="nav-list__item"> <a class="nav-list__link" href="catalog.html">Каталог продукции</a> </li>
+          <li class="nav-list__item nav-list__item--current">
+          <a class="nav-list__link" href="form.html">Подбор программы</a> </li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <!-- Форма подбора программы -->
-      <h1 class="main-title">Подбор программы</h1>
+      <h1 class="main-title main-title--form">Подбор программы</h1>
       <form class="program-form form" action="https://echo.htmlacademy.ru" method="POST">
         <p class="main-subtitle">Заполните анкету, и мы подберем
           <br> программу питания для вашего кота</p>
@@ -85,9 +105,9 @@
         </div>
         <!-- Контейнер формы -->
         <fieldset class="form__fieldset form__fieldset--data-owner">
+          <p class="form__legend"> Контактные данные
+            <br class="mobile-visible"> (владельца кота) </p>
           <div class="form__fieldset-wrapper">
-            <p class="form__legend">Контактные данные
-              <br> (владельца кота)</p>
             <ul class="form__list-wrapper">
               <li class="list-item">
                 <label class="form__label">E-mail:*
@@ -104,16 +124,16 @@
         </fieldset>
         <!-- Контейнер формы -->
         <fieldset class="form__fieldset form__fieldset--data-comment">
+          <p class="form__legend">Комментарий</p>
           <div class="form__fieldset-wrapper">
-            <p class="form__legend">Комментарий</p>
             <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
           </div>
         </fieldset>
         <!-- Контейнер формы -->
         <fieldset class="form__fieldset form__fieldset--data-additionally">
+          <p class="form__legend">Дополнительно</p>
           <div class="form__fieldset-wrapper">
-            <p class="form__legend">Дополнительно</p>
-            <ul class="form__list-wrapper">
+            <ul class="form__list-wrapper form__list-additional">
               <li class="list-item">
                 <label class="form__label form__label-checkbox">
                   <input class="form__checkbox-input visually-hidden" type="checkbox" name="sweetener" checked> <span class="form__checkbox-icon"></span> <span class="form__label-text">сахарозаменитель</span>                  </label>
@@ -142,21 +162,23 @@
     </main>
     <footer class="footer">
       <!-- Вербовка партнёров и инвесторов -->
-      <div class="partnership index-partnership">
-        <div class="partnership__wrapper">
-          <p class="partnership__title"> приглашаем
-            <br> к сотрудничеству
-            <br> дилеров! </p>
-          <p class="partnership__adress"> ул. Большая
-            <br> Конюшенная, д. 19/8
-            <br>
-            <br class="table-visible"> Санкт-Петербург</p>
+      <div class="contacts">
+        <div class="partnership">
+          <div class="partnership__wrapper">
+            <p class="partnership__title"> приглашаем
+              <br> к сотрудничеству
+              <br> дилеров! </p>
+            <p class="partnership__adress"> ул. Большая
+              <br> Конюшенная, д. 19/8
+              <br>
+              <br class="tablet-visible"> Санкт-Петербург </p>
+          </div>
         </div>
-      </div>
-      <!-- Карта с отображением нашей организации -->
-      <div class="location">
-        <a class="location__organization-link" href="index.html"> <img class="location__organization-logo" src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57"
-          height="53" /> </a>
+        <!-- Карта с отображением нашей организации -->
+        <div class="location">
+          <a class="location__organization-link" href="index.html"> <img class="location__organization-logo" src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57"
+            height="53" />8 </a>
+        </div>
       </div>
       <!-- Подвал : наш логотип, соц-сети и Html academy -->
       <div class="footer__wrapper">

@@ -1,6 +1,6 @@
 .how-it-work__list {
   display: grid;
-  grid-template: 1fr/1fr;
+  grid-template: repeat(4, 1fr)/1fr;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -9,7 +9,12 @@
     min-width: 768px;
     width: 100%;
     grid-gap: 65px 0;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

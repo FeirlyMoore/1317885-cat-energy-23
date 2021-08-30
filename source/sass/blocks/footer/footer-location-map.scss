@@ -8,18 +8,39 @@
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+    background: center / cover no-repeat url("../img/logo/location-map--tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background: center / cover no-repeat url("../img/logo/location-map--desktop.png");
   }
 }
 
 .location__organization-link {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  left: 0;
+  top: 140px;
   display: block;
-  margin: auto;
 
-  /*@media (min-width: $tablet-width) {}*/
+  @media (min-width: $desktop-width) {
+    left: 20%;
+  }
 }
 
 .location__organization-logo {
+  width: 56px;
+  height: 52px;
+  margin: auto;
+
   @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 106px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 113px;
     height: 106px;
     margin: auto;

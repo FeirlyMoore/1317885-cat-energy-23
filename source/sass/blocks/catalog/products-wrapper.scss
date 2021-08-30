@@ -1,4 +1,21 @@
 .products-wrapper {
   @include container();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 17px 30px 0;
+    border: 0;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }

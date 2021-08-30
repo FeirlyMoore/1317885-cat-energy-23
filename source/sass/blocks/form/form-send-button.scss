@@ -1,6 +1,17 @@
 .form__send-button-wrapper {
   @include container();
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .form__send-button {
@@ -14,6 +25,22 @@
   padding: 10px 0;
   width: 100%;
   margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 60px;
+    padding: 17px 5px 17px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 80px;
+    padding: 17px 5px 17px 0;
+  }
 }
 
 .form__required-notify {
@@ -22,4 +49,8 @@
   line-height: 16px;
   color: $black-color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+  }
 }

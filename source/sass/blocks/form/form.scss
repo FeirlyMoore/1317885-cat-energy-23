@@ -1,6 +1,14 @@
 .program-form {
   @include container();
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .main-subtitle {
@@ -11,6 +19,17 @@
   color: $pre-black-color;
   margin: 0 auto 38px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 70px;
+    margin: 0 auto 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .form__text-input {
@@ -34,5 +53,10 @@
 
   .form__label-radio {
     color: $special_dark-grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

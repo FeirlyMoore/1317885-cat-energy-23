@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     min-width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 495px;
+    width: fit-content;
+  }
 }
 
 .cat-change__title {
@@ -22,6 +27,11 @@
     padding: 42px 0 0 30px;
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+    padding: 57px 0 0;
+  }
 }
 
 .cat-change__text {
@@ -38,5 +48,11 @@
     width: 700px;
     padding: 0 30px;
     margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 68px;
+    width: 435px;
   }
 }
