@@ -6,19 +6,21 @@
   font-size: 16px;
   line-height: 20px;
   color: $main-color;
-  flex-grow: 1;
   border: 0;
   padding: 10px 0;
   margin-bottom: 24px;
   text-align: center;
-  width: 280px;
+  min-width: 280px;
+  width: 100%;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    width: 280px;
     flex-grow: 0;
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 169px;
     width: 169px;
   }
 }

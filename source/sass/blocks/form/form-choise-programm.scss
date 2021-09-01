@@ -22,6 +22,16 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $catalog-border-color;
     padding: 25px 30px 25px 30px;
+
+    & .list-item {
+    margin-bottom: 11px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 

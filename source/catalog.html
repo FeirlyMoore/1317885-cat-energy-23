@@ -19,13 +19,14 @@
   </head>
 
   <body>
-    <!-- <picture class="test__picture">
+    <!-- Pixel Perfect -->
+    <!-- <picture class="pixel-perfect__picture">
       <source srcset="test/desktop.png" media="(min-width: 1440px)">
       <source srcset="test/tablet.png" media="(min-width: 768px)">
-      <img class="test__img" src="test/mobile.jpg" alt="">
+      <img class="pixel-perfect__img" src="test/mobile.jpg" alt="">
     </picture>
     <style>
-      .test__img {
+      .pixel-perfect__img {
         position: absolute;
         z-index: 5;
         top: 0;
@@ -65,8 +66,13 @@
       <h1 class="main-title">Каталог продукции</h1>
       <div class="products-wrapper products">
         <!-- Элемент каталога -->
-        <article class="products__item"> <img class="products__img" src="img/icons/product__pro-chicken--500.svg" alt="Cat Energy PRO Курица 500 г"
-          width="68" height="86">
+        <article class="products__item">
+          <!-- Изображение товара в адаптиве -->
+          <picture class="products__picture">
+            <source srcset="img/catalog/product__pro-chicken-500--tablet&desktop.png" media="(min-width: 768px)">
+            <img class="products__img" src="img/catalog/product__pro-chicken-500--mobile.png" alt="Cat Energy PRO Курица 500 г">
+          </picture>
+          <!-- Описание товара -->
           <div class="item-description">
             <h2 class="products__title">Cat Energy<br> PRO 500 г</h2>
             <table class="description-table">
@@ -89,8 +95,13 @@
           <button class="order-button">заказать</button>
         </article>
         <!-- Элемент каталога -->
-        <article class="products__item"> <img class="products__img" src="img/icons/product__pro-chicken--1000.svg" alt="Cat Energy PRO Курица 1000 г"
-          width="84" height="100">
+        <article class="products__item">
+          <!-- Изображение товара в адаптиве -->
+          <picture class="products__picture">
+            <source srcset="img/catalog/product__pro-chicken-1000--tablet&desktop.png" media="(min-width: 768px)">
+            <img class="products__img" src="img/catalog/product__pro-chicken-1000--mobile.png" alt="Cat Energy PRO Курица 1000 г">
+          </picture>
+          <!-- Описание товара -->
           <div class="item-description">
             <h2 class="products__title">Cat Energy<br> PRO 1000 г</h2>
             <table class="description-table">
@@ -113,8 +124,13 @@
           <button class="order-button">заказать</button>
         </article>
         <!-- Элемент каталога -->
-        <article class="products__item"> <img class="products__img" src="img/icons/product__pro-fish--500.svg" alt="Cat Energy PRO Рыба 500 г" width="68"
-          height="78">
+        <article class="products__item">
+          <!-- Изображение товара в адаптиве -->
+          <picture class="products__picture">
+            <source srcset="img/catalog/product__pro-fish-500--tablet&desktop.png" media="(min-width: 768px)">
+            <img class="products__img" src="img/catalog/product__pro-fish-500--mobile.png" alt="Cat Energy PRO Рыба 500 г">
+          </picture>
+          <!-- Описание товара -->
           <div class="item-description">
             <h2 class="products__title">Cat Energy<br> PRO 500 г</h2>
             <table class="description-table">
@@ -137,8 +153,13 @@
           <button class="order-button">заказать</button>
         </article>
         <!-- Элемент каталога -->
-        <article class="products__item"> <img class="products__img" src="img/icons/product__pro-fish--1000.svg" alt="Cat Energy PRO Рыба 1000 г"
-          width="84" height="100">
+        <article class="products__item">
+          <!-- Изображение товара в адаптиве -->
+          <picture class="products__picture">
+            <source srcset="img/catalog/product__pro-fish-1000--tablet&desktop.png" media="(min-width: 768px)">
+            <img class="products__img" src="img/catalog/product__pro-fish-1000--mobile.png" alt="Cat Energy PRO Рыба 1000 г">
+          </picture>
+          <!-- Описание товара -->
           <div class="item-description">
             <h2 class="products__title">Cat Energy<br> PRO 1000 г</h2>
             <table class="description-table">
@@ -161,8 +182,13 @@
           <button class="order-button">заказать</button>
         </article>
         <!-- Элемент каталога -->
-        <article class="products__item"> <img class="products__img" src="img/icons/product__slim-buckwheat--500.svg" alt="Cat Energy Slim Греча 500 г"
-          width="68" height="78">
+        <article class="products__item">
+          <!-- Изображение товара в адаптиве -->
+          <picture class="products__picture">
+            <source srcset="img/catalog/product__slim-buckwheat-500--tablet&desktop.png" media="(min-width: 768px)">
+            <img class="products__img" src="img/catalog/product__slim-buckwheat-500--mobile.png" alt="Cat Energy Slim Греча 500 г">
+          </picture>
+          <!-- Описание товара -->
           <div class="item-description">
             <h2 class="products__title">Cat Energy<br> slim 500 г</h2>
             <table class="description-table">
@@ -185,8 +211,13 @@
           <button class="order-button">заказать</button>
         </article>
         <!-- Элемент каталога -->
-        <article class="products__item"> <img class="products__img" src="img/icons/product__slim-buckwheat--1000.svg" alt="Cat Energy Slim Греча 1000 г"
-          width="84" height="100">
+        <article class="products__item">
+          <!-- Изображение товара в адаптиве -->
+          <picture class="products__picture">
+            <source srcset="img/catalog/product__slim-buckwheat-1000--tablet&desktop.png" media="(min-width: 768px)">
+            <img class="products__img" src="img/catalog/product__slim-buckwheat-1000--mobile.png" alt="Cat Energy Slim Греча 1000 г">
+          </picture>
+          <!-- Описание товара -->
           <div class="item-description">
             <h2 class="products__title">Cat Energy<br> slim 1000 г</h2>
             <table class="description-table">
@@ -209,8 +240,13 @@
           <button class="order-button">заказать</button>
         </article>
         <!-- Элемент каталога -->
-        <article class="products__item"> <img class="products__img" src="img/icons/product__slim-rice--500.svg" alt="Cat Energy Slim Рис 500 г"
-          width="72" height="84">
+        <article class="products__item">
+          <!-- Изображение товара в адаптиве -->
+          <picture class="products__picture">
+            <source srcset="img/catalog/product__slim-rice-500--tablet&desktop.png" media="(min-width: 768px)">
+            <img class="products__img" src="img/catalog/product__slim-rice-500--mobile.png" alt="Cat Energy Slim Рис 500 г">
+          </picture>
+          <!-- Описание товара -->
           <div class="item-description">
             <h2 class="products__title">Cat Energy<br> slim 500 г</h2>
             <table class="description-table">
@@ -233,7 +269,10 @@
           <button class="order-button">заказать</button>
         </article>
         <!-- Ссылка на полный каталог -->
-        <div class="products-item show-all"> <img class="products-item__shaw-all-icon" src="img/icons/icon-plus.svg" alt="plus">
+        <div class="products-item show-all">
+          <svg class="products-item__shaw-all-icon" width="60" height="60">
+            <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-plus">
+          </svg>
           <p class="show-all__title">Показать еще 100500 товаров</p>
           <p class="show-all__description">На самом деле вкусов гораздо больше!</p>
           <button class="order-button show-all__button">показать всё</button>
@@ -269,7 +308,10 @@
               <button class="additional-products__order">Заказать</button>
             </li>
           </ul>
-          <div class="order-all-gift gift"> <img class="gift__img" src="img/icons/icon-gift.svg" alt="gift" width="78" height="80">
+          <div class="order-all-gift gift">
+            <svg class="gift__img" width="78" height="80">
+              <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-gift">
+            </svg>
             <p class="gift__text">Закажите все
               <br> и получите чехол для
               <br> кота в подарок! </p>
@@ -280,7 +322,7 @@
     <footer class="footer">
       <!-- Вербовка партнёров и инвесторов -->
       <div class="contacts">
-        <div class="partnership">
+        <div class="partnership index-partnership">
           <div class="partnership__wrapper">
             <p class="partnership__title"> приглашаем
               <br> к сотрудничеству
@@ -288,14 +330,13 @@
             <p class="partnership__adress"> ул. Большая
               <br> Конюшенная, д. 19/8
               <br>
-              <br class="tablet-visible">
-              <br class="desktop-visible"> Санкт-Петербург </p>
+              <br class="tablet-visible"> Санкт-Петербург </p>
           </div>
         </div>
         <!-- Карта с отображением нашей организации -->
         <div class="location">
           <a class="location__organization-link" href="index.html"> <img class="location__organization-logo" src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57"
-            height="53" /> </a>
+            height="53" /></a>
         </div>
       </div>
       <!-- Подвал : наш логотип, соц-сети и Html academy -->
@@ -306,24 +347,24 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="https://vk.com/doctype_redfox39" target="_blank">
-                <!-- <svg class="social__icon sicial__item-vk" width="22" height="12">
-                <use xlink:href="img/icons/icon_vk.svg"/>
-              </svg>--><img class="social__icon social__icon--vk" src="img/icons/icon_vk.svg" width="25" height="17" alt="Vkontakte"
-                /> </a>
+                <svg class="social__icon social__icon--vk">
+                  <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-vk"/>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a href="https://www.instagram.com/blake_moore_fox_666" target="_blank">
-                <!--<svg class="social__icon social__icon-inst" width="16" height="16">
-                <use href="img/icons/icon_inst.svg"/>
-              </svg>--><img class="social__icon social__icon--inst" src="img/icons/icon_inst.svg" width="16" height="16"
-                alt="Instagram" /> </a>
+                <svg class="social__icon social__icon--inst">
+                  <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-inst"/>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a href="https://www.facebook.com/REDFFOX39" target="_blank">
-                <!--<svg class="social__icon sicial__item-fb" width="10" height="19">
-                <use href="img/icons/icon_facebook.svg"/>
-              </svg>--><img class="social__icon social__icon--fb" src="img/icons/icon_facebook.svg" width="20" height="18"
-                alt="Facebook" /> </a>
+                <svg class="social__icon social__icon--fb">
+                  <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-fb"/>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -333,7 +374,8 @@
         </a>
           <a class="footer__html-academy__link-logo" href="https://htmlacademy.ru/" target="_blank">
             <svg class="html-academy-logo" width="60" height="80">
-              <use xlink:href="img/logo/html-academy__logo.svg#academy-icon" /> </svg>
+              <use xlink:href="img/icons/conglomerate__decorative-icons.svg#academy-icon"/>
+            </svg>
           </a>
         </div>
       </div>
@@ -344,4 +386,5 @@
   </body>
 
 </html>
-<!-- <DOCTYPE Liky> -->
+
+<!-- <!DOCTYPE Liky> -->

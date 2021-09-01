@@ -39,6 +39,14 @@
   box-sizing: border-box;
   margin-left: 15px;
   padding: 12px;
+
+  @media (min-width: $tablet-width) {
+    /*margin-bottom: 66px;*/
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px;
+  }
 }
 
 .form__label {
@@ -60,3 +68,16 @@
     line-height: 30px;
   }
 }
+
+
+/*input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid {
+  border: 2px solid black;
+}*/

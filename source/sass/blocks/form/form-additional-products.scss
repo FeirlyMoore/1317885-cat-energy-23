@@ -15,6 +15,12 @@
   display: grid;
   grid-template: repeat(4, 1fr)/1fr;
 
+  .list-item:last-child {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 15px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);

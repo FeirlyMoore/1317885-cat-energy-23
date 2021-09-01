@@ -35,5 +35,9 @@
   height: 34px;
   color: $special_grey-2;
 
+  &:hover {
+    color: $light-green;
+  }
+
   /*@media (min-width: $tablet-width) {}*/
 }
