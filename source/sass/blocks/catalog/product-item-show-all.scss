@@ -81,6 +81,14 @@
   padding: 10px 0;
   margin-bottom: 24px;
 
+  &:hover {
+    background-color: $special_grey-3;
+  }
+
+  &:active {
+    color: rgba($special_dark-grey, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }

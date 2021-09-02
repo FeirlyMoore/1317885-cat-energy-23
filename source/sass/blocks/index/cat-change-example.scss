@@ -1,8 +1,14 @@
 .cat-change__example {
+  position: relative;
   min-width: 280px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 200px;
+    left: 6.4%;
   }
 }

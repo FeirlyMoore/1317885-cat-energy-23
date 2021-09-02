@@ -104,6 +104,14 @@
   margin-bottom: 17px;
   margin-top: 15px;
 
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba($main-color, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 27px;

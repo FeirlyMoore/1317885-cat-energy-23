@@ -23,8 +23,6 @@
   align-items: center;
   margin-bottom: 15px;
 
-  @media (min-width: $tablet-width) {}
-
   @media (min-width: $desktop-width) {
     &:last-child {
       margin: 0;
