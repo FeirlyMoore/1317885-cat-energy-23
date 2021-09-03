@@ -25,12 +25,17 @@
 }
 
 .social__icon {
+  color: $special_grey-2;
+
   &:hover {
-    fill: $light-green;
+    color: $light-green;
   }
 }
 
 .social__icon--vk {
+  width: 28px;
+  height: 22px;
+
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 25px;
@@ -38,6 +43,9 @@
 }
 
 .social__icon--inst {
+  width: 20px;
+  height: 20px;
+
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 23px;
@@ -45,6 +53,9 @@
 }
 
 .social__icon--fb {
+  width: 22px;
+  height: 22px;
+
   @media (min-width: $tablet-width) {
     width: 25px;
     height: 30px;

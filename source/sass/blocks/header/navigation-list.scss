@@ -40,6 +40,14 @@
     border-bottom: 1px solid $light-gray-border;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: fit-content;
     font-family: "Oswald Regular", "Arial", sans-serif;
@@ -88,6 +96,14 @@
 .nav-list__item--current {
   &.nav-list__item {
     border-bottom: 1px solid $light-green;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
 
     @media (min-width: $tablet-width) {
       border-bottom: none;

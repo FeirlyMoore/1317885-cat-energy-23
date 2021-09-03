@@ -123,13 +123,40 @@
 
 .catalog-button {
   @include uppercase();
+  position: relative;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: $pre-black-color;
   text-decoration: none;
   display: block;
-  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 5px;
+    left: 135px;
+    background-image: url("../img/icons/icon-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    top: 5px;
+    left: 135px;
+    transition: background-image 0.1s;
+    background-image: url("../img/icons/icon-arrow--big.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -141,7 +168,7 @@
   }
 }
 
-.icon-arrow {
+.catalog-button > .icon-arrow {
   margin: 0 0 2px 15px;
 
   @media (min-width: $tablet-width) {
