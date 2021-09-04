@@ -39,7 +39,7 @@
 
 .show-all__title {
   @include uppercase();
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: $font-stack--Oswald-Regular;
   font-size: 16px;
   line-height: 20px;
   color: $pre-black-color;
@@ -70,7 +70,7 @@
 
 .show-all__button {
   @include uppercase();
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: $font-stack--Oswald-Regular;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -93,3 +93,5 @@
     margin-bottom: 0;
   }
 }
+
+//<!DOCTYPE Liky>

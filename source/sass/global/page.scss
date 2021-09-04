@@ -79,6 +79,14 @@
   }
 }
 
+.mobile-only--hidden {
+  display: none;
+
+  @media (min-width: $mobile-width-only) {
+    display: initial;
+  }
+}
+
 @media (max-width: $mobile-width-only), (min-width: $desktop-width-only) {
   .tablet-visible {
     display: none;
@@ -92,3 +100,5 @@
     display: initial;
   }
 }
+
+//<!DOCTYPE Liky>

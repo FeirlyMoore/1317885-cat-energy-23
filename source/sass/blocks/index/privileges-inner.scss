@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  min-width: 280px;
-  width: 100%;
+  min-width: 240px;
+  max-width: 780px;
   margin: 0 20px;
   padding: 0;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    max-width: 1200px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,3 +20,5 @@
     padding: 0;
   }
 }
+
+//<!DOCTYPE Liky>

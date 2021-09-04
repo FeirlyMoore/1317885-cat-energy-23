@@ -5,7 +5,7 @@
   flex-direction: column;
   height: 480px;
   margin-bottom: 22px;
-  background: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/logo/index-background-mobile@1x.png");
+  background: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/index-background-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 320px 302px;
@@ -13,8 +13,6 @@
 
   @media (min-width: $tablet-width) {
     @include container();
-    display: flex;
-    flex-direction: column;
     background: 0 0;
     padding: 0 30px 0 120px;
     min-height: 768px;
@@ -23,17 +21,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
     align-content: flex-start;
     flex-wrap: wrap;
     height: 602px;
     padding: 144px 40px 0 190px;
 
-    background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/logo/index-background-desktop@1x.png");
+    background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/index-background-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: 720px 694px;
     margin-bottom: 8px;
   }
 }
+
+//<!DOCTYPE Liky>

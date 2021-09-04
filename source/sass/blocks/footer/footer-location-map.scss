@@ -4,15 +4,15 @@
   justify-content: center;
   min-height: 362px;
   height: 100%;
-  background: center / cover no-repeat url("../img/logo/location-map.png");
+  background: center / cover no-repeat url("../img/backgrounds/location-map.png");
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
-    background: center / cover no-repeat url("../img/logo/location-map--tablet.png");
+    background: center / cover no-repeat url("../img/backgrounds/location-map--tablet.png");
   }
 
   @media (min-width: $desktop-width) {
-    background: center / cover no-repeat url("../img/logo/location-map--desktop.png");
+    background: center / cover no-repeat url("../img/backgrounds/location-map--desktop.png");
   }
 }
 
@@ -30,19 +30,31 @@
 }
 
 .location__organization-logo {
+  position: relative;
   width: 56px;
   height: 52px;
   margin: auto;
+
+  &:hover {
+    width: 65px;
+    height: auto;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 
   @media (min-width: $tablet-width) {
     width: 113px;
     height: 106px;
     margin: auto;
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 113px;
-    height: 106px;
-    margin: auto;
+    &:hover {
+      top: -7px;
+      width: 120px;
+      height: auto;
+    }
   }
 }
+
+//<!DOCTYPE Liky>

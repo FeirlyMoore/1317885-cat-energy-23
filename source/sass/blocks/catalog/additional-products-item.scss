@@ -92,7 +92,7 @@
 
 .additional-products__order {
   @include uppercase();
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: $font-stack--Oswald-Regular;
   font-size: 16px;
   line-height: 20px;
   color: $main-color;
@@ -122,3 +122,5 @@
     margin: 0;
   }
 }
+
+//<!DOCTYPE Liky>

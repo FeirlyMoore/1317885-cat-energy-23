@@ -1,15 +1,16 @@
 .privileges {
   @include container();
-  display: flex;
-  justify-content: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
+    padding: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
-    padding: 0 40px;
-    width: fit-content;
+    padding: 0 110px;
+    width: 100%;
   }
 }
+
+//<!DOCTYPE Liky>

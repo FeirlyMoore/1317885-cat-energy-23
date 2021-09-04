@@ -1,9 +1,3 @@
-.form__fieldset--data-comment {
-  /*@media (min-width: $tablet-width) {
-
-  }*/
-}
-
 .form__textarea {
   @include form-element();
   width: 100%;
@@ -13,7 +7,15 @@
   margin-bottom: 20px;
   padding: 12px;
 
+  &:focus {
+    outline: none;
+    border: 2px solid $special_dark-grey;
+    border-radius: 0;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
   }
 }
+
+//<!DOCTYPE Liky>

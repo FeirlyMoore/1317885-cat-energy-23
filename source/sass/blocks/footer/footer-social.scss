@@ -30,6 +30,10 @@
   &:hover {
     color: $light-green;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__icon--vk {
@@ -61,3 +65,5 @@
     height: 30px;
   }
 }
+
+//<!DOCTYPE Liky>

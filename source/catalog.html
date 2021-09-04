@@ -18,13 +18,15 @@
     <title>HTML Academy: Кэт энерджи - Каталог продукции </title>
   </head>
 
-  <body>
+  <body class="body loaded-hiding">
     <!-- Pixel Perfect -->
-    <!-- <picture class="pixel-perfect__picture">
-      <source srcset="test/desktop.png" media="(min-width: 1440px)">
-      <source srcset="test/tablet.png" media="(min-width: 768px)">
-      <img class="pixel-perfect__img" src="test/mobile.jpg" alt="">
-    </picture>
+    <!-- <div class="pixel-perfect">
+      <picture class="pixel-perfect__picture">
+        <source srcset="Pixel-Perfect/catalog-desktop.png" media="(min-width: 1440px)">
+        <source srcset="Pixel-Perfect/catalog-tablet.png" media="(min-width: 768px)">
+        <img class="pixel-perfect__img" src="Pixel-Perfect/catalog-mobile.jpg" alt="">
+      </picture>
+    </div>
     <style>
       .pixel-perfect__img {
         position: absolute;
@@ -36,7 +38,14 @@
         overflow: hidden;
         opacity: 0;
       }
-    </style> -->
+    </style>  -->
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
     <!-- Шапка сайта : логотит, навигация ( меню ) -->
     <header class="main-header main-header--no-index main-header--style">
       <div class="main-header__wrapper">
@@ -49,7 +58,7 @@
           /> </a>
       </div>
       <!-- Навигация -->
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened">
         <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню" accesskey="b">
         <span class="hidden">Открыть меню</span> </button>
         <ul class="nav-list nav-list--style">
@@ -319,8 +328,11 @@
         </div>
         <!-- Карта с отображением нашей организации -->
         <div class="location">
-          <a class="location__organization-link" href="index.html"> <img class="location__organization-logo" src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57"
-            height="53" /></a>
+          <a class="location__organization-link" href="index.html">
+            <picture>
+              <source srcset="img/logo/map-pin--tablet&desktop.png" media="(min-width: 768px)"> <img class="location__organization-logo" src="img/logo/map-pin--mobile.png" alt="Cat Energy" width="57"
+              height="53" /> </picture>
+          </a>
         </div>
       </div>
       <!-- Подвал : наш логотип, соц-сети и Html academy -->
@@ -351,16 +363,15 @@
         </div>
         <div class="footer__html-academy-copyright">
           <!-- Все права принадлежат REDFOX39 inc. --><a class="footer__html-academy__link" href="https://htmlacademy.ru/" target="_blank">
-          HTML Academy
-        </a>
-          <a class="footer__html-academy__link-logo" href="https://htmlacademy.ru/" target="_blank">
+            HTML Academy
             <svg class="html-academy-logo" width="60" height="80">
-              <use xlink:href="img/icons/conglomerate__decorative-icons.svg#academy-icon" /> </svg>
-          </a>
-        </div>
+              <use xlink:href="img/icons/conglomerate__decorative-icons.svg#academy-icon" />
+            </svg>
+          </a> </div>
       </div>
     </footer>
     <progress id="page_progress" class="page-progress" max="100" value="0" title="Прогресс прокрутки страницы"></progress>
+    <script src="js/preloader.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/nav-button.js"></script>
   </body>

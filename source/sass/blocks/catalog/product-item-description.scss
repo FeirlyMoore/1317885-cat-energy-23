@@ -5,7 +5,7 @@
 
 .products__title {
   @include uppercase();
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: $font-stack--Oswald-Regular;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -30,7 +30,10 @@
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
-  border-bottom: 1px solid $special_grey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special_grey;
+  }
 }
 
 .description-table__cell {
@@ -44,3 +47,5 @@
     text-align: right;
   }
 }
+
+//<!DOCTYPE Liky>

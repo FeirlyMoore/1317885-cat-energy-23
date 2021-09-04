@@ -1,6 +1,7 @@
 .privileges__list-item {
   position: relative;
   min-width: 240px;
+  width: 100%;
   padding: 29px 20px 20px;
   margin-bottom: 22px;
   background-color: $footer-gray;
@@ -18,13 +19,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 570px;
+    min-width: 300px;
+    max-width: 570px;
     padding: 76px 50px 62px;
     margin: 0 80px 0 0;
 
     &:last-child {
       margin: 0;
     }
+  }
+
+  @media (min-width: 1440px) {
+    width: 570px;
+    margin: 0;
   }
 }
 
@@ -175,3 +182,5 @@
     margin: 0 0 2px 25px;
   }
 }
+
+//<!DOCTYPE Liky>

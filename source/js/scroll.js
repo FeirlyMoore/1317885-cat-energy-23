@@ -14,10 +14,4 @@ window.onscroll = function scrollFunc() {
     return progressPercent
 }
 
-/*window.addEventListener("resize", function() {
-  let funcNum = scrollFunc();
-
-  if (funcNum == NaN) {
-    scrollLine.value = 0;
-  }
-});*/
+//<!DOCTYPE Liky>

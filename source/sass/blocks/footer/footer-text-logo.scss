@@ -1,12 +1,18 @@
 .footer__text-logo {
   text-align: center;
   margin: 0;
-
-  /*@media (min-width: $tablet-width) {}*/
 }
 
 .footer__text-logo-img {
   padding: 36px 0 26px;
 
-  /*@media (min-width: $tablet-width) {}*/
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+//<!DOCTYPE Liky>
