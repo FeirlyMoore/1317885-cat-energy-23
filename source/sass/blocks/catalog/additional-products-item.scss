@@ -21,12 +21,19 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 895px;
+    min-width: 780px;
+    max-width: 895px;
     box-sizing: border-box;
     padding: 0;
     border-left: none;
     border-right: none;
     justify-content: flex-end;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 895px;
+    max-width: initial;
+    width: 100%;
   }
 }
 

@@ -23,10 +23,14 @@
     width: 245px;
     height: 290px;
     padding-top: 65px;
-    margin-left: 80px;
+    margin: auto;
     background-repeat: no-repeat;
     background-size: 245px;
     background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/catalog-gift-background--desktop.png");
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 80px;
   }
 }
 

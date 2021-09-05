@@ -20,18 +20,12 @@
 
   @media (min-width: $desktop-width) {
     min-width: 300px;
-    max-width: 570px;
     padding: 76px 50px 62px;
     margin: 0 80px 0 0;
 
     &:last-child {
       margin: 0;
     }
-  }
-
-  @media (min-width: 1440px) {
-    width: 570px;
-    margin: 0;
   }
 }
 
