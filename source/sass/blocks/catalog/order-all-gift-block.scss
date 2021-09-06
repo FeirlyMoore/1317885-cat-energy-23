@@ -4,7 +4,7 @@
   min-width: 280px;
   min-height: 225px;
   background: center/280px no-repeat;
-  background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/logo/catalog-gift-background.png");
+  background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/catalog-gift-background.png");
   padding-top: 65px;
 
   @media (min-width: $tablet-width) {
@@ -15,19 +15,22 @@
     box-sizing: border-box;
     align-items: center;
     background: center/100% no-repeat;
-    background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/logo/catalog-gift-background--tablet.png");
+    background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/catalog-gift-background--tablet.png");
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 245px;
     height: 290px;
-    box-sizing: border-box;
     padding-top: 65px;
-    margin-left: 80px;
+    margin: auto;
     background-repeat: no-repeat;
     background-size: 245px;
-    background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/logo/catalog-gift-background--desktop.png");
+    background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/catalog-gift-background--desktop.png");
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 80px;
   }
 }
 
@@ -65,3 +68,5 @@
     padding-right: 0;
   }
 }
+
+//<!DOCTYPE Liky>

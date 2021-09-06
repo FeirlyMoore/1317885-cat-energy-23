@@ -19,13 +19,15 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
-  <body class="body">
+  <body class="body loaded-hiding">
     <!-- Pixel Perfect -->
-    <!-- <picture class="pixel-perfect__picture">
-      <source srcset="Pixel-Perfect/desktop.png" media="(min-width: 1440px)">
-      <source srcset="Pixel-Perfect/tablet.png" media="(min-width: 768px)">
-      <img class="pixel-perfect__img" src="Pixel-Perfect/mobile.jpg" alt="">
-    </picture>
+    <!-- <div class="pixel-perfect">
+      <picture class="pixel-perfect__picture">
+        <source srcset="Pixel-Perfect/index-desktop.png" media="(min-width: 1440px)">
+        <source srcset="Pixel-Perfect/index-tablet.png" media="(min-width: 768px)">
+        <img class="pixel-perfect__img" src="Pixel-Perfect/index-mobile.jpg" alt="">
+      </picture>
+    </div>
     <style>
       .pixel-perfect__img {
         position: absolute;
@@ -38,6 +40,14 @@
         opacity: 0;
       }
     </style> -->
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <script src="js/preloader.js"></script>
     <!-- Шапка сайта : логотит, навигация ( меню ) -->
     <header class="main-header main-header--style">
       <div class="main-header__wrapper">
@@ -50,7 +60,7 @@
           /> </a>
       </div>
       <!-- Навигация -->
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened">
         <button class="nav-toggle-button nav-toggle-button--js" type="button" aria-label="Открыть меню" accesskey="b">
         <span class="hidden">Открыть меню</span> </button>
         <ul class="nav-list nav-list--style nav-list-index">
@@ -75,8 +85,9 @@
       <!-- Описание возможностей товара -->
       <div class="privileges">
         <ul class="privileges-list">
-          <li class="privileges__list-item"> <img class="privileges__item-img" src="img/privileges/privileges_slim.svg" width="50" height="53" alt="Slim down cat"
-            />
+          <li class="privileges__list-item">
+            <svg class="privileges__item-img" width="50" height="53" aria-label="Slim cat">
+              <use xlink:href="img/privileges/conglomerate__privileges-img.svg#slim" /> </svg>
             <h2 class="privileges__title">похудение</h2>
             <p class="privileges__description"> Ваш кот весит больше собаки и
               <br class="mobile-visible"> почти
@@ -90,8 +101,9 @@
               <br class="mobile-visible"> питомцу сбросить лишний вес. </p> <a href="catalog.html" class="catalog-button catalog-button--style">
               каталог slim
             </a> </li>
-          <li class="privileges__list-item"> <img class="privileges__item-img privileges__item-img--2" src="img/privileges/privileges_muscle.svg"
-            width="67" height="50" alt="Fat cat" />
+          <li class="privileges__list-item">
+            <svg class="privileges__item-img privileges__item-img--2" width="67" height="50" aria-label="Fat cat">
+              <use xlink:href="img/privileges/conglomerate__privileges-img.svg#muscle" /> </svg>
             <h2 class="privileges__title">Набор массы</h2>
             <p class="privileges__description"> Заработать авторитет среди
               <br class="mobile-visible"> дворовых котов
@@ -133,7 +145,7 @@
                 <br class="mobile-visible"> наслаждайтесь
                 <br class="tablet-visible"> изменениями
                 <br class="mobile-visible"> к лучшему
-                <br class="tablet-visible"> вашего питомца! </p> <span class="how-it-work__background-number background-number-4 ">4</span>              </li>
+                <br class="mobile-only--hidden"> вашего питомца! </p> <span class="how-it-work__background-number background-number-4 ">4</span>              </li>
           </ul>
         </div>
       </section>
@@ -159,15 +171,16 @@
           </div>
         </article>
         <div class="cat-change__example">
-          <div class="cat-change__img-container"> <img class="cat-change__img" src="img/cat-change/cat-fat.png" width="311" height="232" alt="Fat cat"
-            /> <img class="hidden" src="img/cat-change/cat-skinny.png" width="311" height="232" alt="Skinny cat"
-            /> </div>
+          <div class="cat-change__img-container">
+            <div class="cat-change__img cat-change__img--1 cat-img-1-js" style="width: 50%;"></div>
+            <div class="cat-change__img cat-change__img--2 cat-img-2-js" style="width: 50%;"></div>
+          </div>
           <div class="cat-change__range-container">
             <div class="cat-change__range-label">
-              <button class="cat-change__range-button">было</button>
-              <input class="cat-change__range cat-change__range--js" type="range" name="cat-change"
+              <button class="cat-change__range-button button-before-js">было</button>
+              <input class="cat-change__range cat-change__range-js" type="range" name="cat-change"
               min="0" max="100" value="50" step="1" />
-              <button class="cat-change__range-button">стало</button>
+              <button class="cat-change__range-button button-after-js">стало</button>
             </div>
           </div>
         </div>
@@ -189,8 +202,11 @@
         </div>
         <!-- Карта с отображением нашей организации -->
         <div class="location">
-          <a class="location__organization-link" href="index.html"> <img class="location__organization-logo" src="img/logo/cat-energy-logo__map.svg" alt="Cat Energy" width="57"
-            height="53" /></a>
+          <a class="location__organization-link" href="index.html">
+            <picture>
+              <source srcset="img/logo/map-pin--tablet&desktop.png" media="(min-width: 768px)"> <img class="location__organization-logo" src="img/logo/map-pin--mobile.png" alt="Cat Energy" width="57"
+              height="53" /> </picture>
+          </a>
         </div>
       </div>
       <!-- Подвал : наш логотип, соц-сети и Html academy -->
@@ -221,18 +237,17 @@
         </div>
         <div class="footer__html-academy-copyright">
           <!-- Все права принадлежат REDFOX39 inc. --><a class="footer__html-academy__link" href="https://htmlacademy.ru/" target="_blank">
-          HTML Academy
-        </a>
-          <a class="footer__html-academy__link-logo" href="https://htmlacademy.ru/" target="_blank">
+            HTML Academy
             <svg class="html-academy-logo" width="60" height="80">
-              <use xlink:href="img/icons/conglomerate__decorative-icons.svg#academy-icon" /> </svg>
-          </a>
-        </div>
+              <use xlink:href="img/icons/conglomerate__decorative-icons.svg#academy-icon" />
+            </svg>
+          </a> </div>
       </div>
     </footer>
     <progress id="page_progress" class="page-progress" max="100" value="0" title="Прогресс прокрутки страницы"></progress>
     <script src="js/scroll.js"></script>
     <script src="js/nav-button.js"></script>
+    <script src="js/cat-change.js"></script>
   </body>
 
 </html>

@@ -1,33 +1,58 @@
-.form__fieldset--data-owner {
-  /*@media (min-width: $tablet-width) {}
+.contacts {
+  flex-direction: column;
 
-  @media (min-width: $desktop-width) {}*/
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.contacts-item {
+  @media (min-width: $desktop-width) {
+    min-width: 320px;
+    max-width: 570px;
+    width: 100%;
+    margin: 0 80px 0 0;
+  }
 }
 
 .form__text-input-icon {
   position: absolute;
+  color: $special_dark-grey-2;
+  width: 40px;
+  background: $main-color;
+}
+
+.form__text-input:focus ~ .form__text-input-icon {
+  color: $light-green;
 }
 
 .form__text-input-icon--email {
-  right: 34px;
+  right: 1.5%;
+  stroke: $special_dark-grey-2;
 
   @media (min-width: $tablet-width) {
-    right: 90px;
+    right: 1%;
   }
 
   @media (min-width: $desktop-width) {
-    right: 130px;
+    width: 50px;
   }
+}
+
+.form__text-input:focus ~ .form__text-input-icon--email {
+  stroke: $light-green;
 }
 
 .form__text-input-icon--phone {
-  right: 31px;
+  right: 1.2%;
 
   @media (min-width: $tablet-width) {
-    right: 87px;
+    right: 0.8%;
   }
 
   @media (min-width: $desktop-width) {
-    right: 127px;
+    right: 1%;
   }
 }
+
+//<!DOCTYPE Liky>

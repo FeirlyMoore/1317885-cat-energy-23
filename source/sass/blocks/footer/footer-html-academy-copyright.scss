@@ -10,6 +10,10 @@
 }
 
 .footer__html-academy__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -18,26 +22,37 @@
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }
+
+  &:hover {
+    .html-academy-logo {
+      color: $light-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__html-academy__link-logo {
   display: flex;
   width: fit-content;
   height: auto;
-
-  /*@media (min-width: $tablet-width) {}*/
 }
 
 .html-academy-logo {
-  /*//position: relative;
-  left: 50%;*/
   width: 27px;
   height: 34px;
   color: $special_grey-2;
+  margin-left: 25px;
 
   &:hover {
     color: $light-green;
   }
 
-  /*@media (min-width: $tablet-width) {}*/
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+//<!DOCTYPE Liky>

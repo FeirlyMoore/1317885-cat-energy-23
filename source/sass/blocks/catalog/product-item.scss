@@ -18,18 +18,18 @@
     border-top: none;
     padding-bottom: 17px;
     padding-top: 165px;
-    margin-top: 90px;
-    margin-bottom: 48px;
+    /*margin-top: 90px;
+    margin-bottom: 48px;*/
+    margin: 90px auto 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-bottom: 50px;
-    margin-right: 0;
+    // margin: auto;
 
-    &:nth-child(4) {
-      margin-right: 0;
-    }
+    // &:nth-child(4) {
+    //   margin-right: 0;
+    // }
   }
 }
 
@@ -46,3 +46,5 @@
     left: 15%;
   }
 }
+
+//<!DOCTYPE Liky>

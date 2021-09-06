@@ -1,26 +1,73 @@
 .cat-change__img-container {
   display: flex;
-  justify-content: center;
-  min-width: 280px;
-  margin: 0 20px 0 20px;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: fit-content;
-    margin: auto;
-  }
-}
-
-.cat-change__img {
   position: relative;
-  margin-top: 37px;
-  margin-bottom: 25px;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  height: 240px;
+  transition: 0.5s;
 
   @media (min-width: $tablet-width) {
-    width: 690px;
-    height: 517px;
-    left: 18px;
-    top: 3px;
-    margin: 53px auto 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 708px;
+    height: 465px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 536px;
   }
 }
+
+.cat-change__img--1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-image: url("../img/cat-change/cat-fat-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+    background-position-x: 50px;
+    background-position-y: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 536px;
+    background-size: auto;
+    background-position-x: -15px;
+    background-position-y: 4px;
+  }
+}
+
+.cat-change__img--2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 240px;
+  z-index: 10;
+  background-image: url("../img/cat-change/cat-skinny-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: auto;
+    right: 0;
+    height: 100%;
+    background-size: cover;
+    background-position-x: 68px;
+    transform: scaleX(-1);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: auto;
+    background-position-x: 60px;
+  }
+}
+
+//<!DOCTYPE Liky>
