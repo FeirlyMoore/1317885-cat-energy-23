@@ -30,7 +30,6 @@
     width: 130px;
     margin: 0 auto 20px;
     text-align: center;
-    width: 130px;
     height: 57px;
   }
 }
@@ -70,10 +69,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 5px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 
   &:nth-child(2) {
