@@ -22,7 +22,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: fit-content;
+    // width: fit-content;
+    width: 245px;
+    height: 431px;
   }
 }
 

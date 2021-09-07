@@ -8,16 +8,17 @@ window.onload = () => {
     document.body.classList.remove('loaded-hiding');
 
     const products = document.querySelectorAll('.products__item');
-    for (product of products) {
-      product.classList.add('animation-scale');
-      // product.style.animation = "animation-scale 1s ease";
+    if (products) {
+      for (product of products) {
+        product.classList.add('animation-scale');
+      }
     }
 
     const promoWrapper = document.querySelector('.promo__title-wrapper');
-    if (promoWrapper) promoWrapper.style.animation = "animation-scale 1s ease";
+    if (promoWrapper) promoWrapper.classList.add('animation-scale');
 
     const promoButton = document.querySelector('.promo-button');
-    if (promoButton) promoButton.style.animation = "animation-scale 1s ease";
+    if (promoButton) promoButton.classList.add('animation-scale');
 
     const promoPicture = document.querySelector('.promo__picture');
     if (promoPicture) promoPicture.style.animation = "animation-position 1s ease";
@@ -25,7 +26,8 @@ window.onload = () => {
     const privilegesItem = document.querySelectorAll('.privileges__list-item');
     if (privilegesItem) {
       for (let i = 0; i < privilegesItem.length; i++) {
-        let j = 1.5 + i;
+        let b = i - 0.5, j = 1.5;
+        if (b >= 0) j = j+b;
         privilegesItem[i].style.animation = `animation-scale ${j}s ease`;
         // privilegesItem[i].style = `--animation-duration: ${j}s`;
         // j++;
