@@ -19,7 +19,9 @@
 
   @media (min-width: $desktop-width) {
     order: 3;
-    position: initial;
+    position: relative;
+    top: 0;
+    left: 0;
     z-index: 1;
     height: auto;
     width: fit-content;
@@ -30,6 +32,16 @@
 .promo__img {
   @media (min-width: $desktop-width) {
     display: inline-block;
+  }
+}
+
+@keyframes animation-position {
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 0;
   }
 }
 
