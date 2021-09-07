@@ -101,4 +101,8 @@
   }
 }
 
+.animation-scale {
+  animation: animation-scale var(--animation-duration, 1s) ease;
+}
+
 //<!DOCTYPE Liky>
