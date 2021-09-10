@@ -1,7 +1,7 @@
 .partnership {
   @include container();
   background-color: $footer-gray;
-  padding: 15px 20px 10px;
+  padding: 15px 20px 12px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px 52px;
@@ -37,12 +37,12 @@
   font-size: 16px;
   line-height: 20px;
   color: $pre-black-color;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 25px;
     width: 170px;
-    margin: 0;
   }
 }
 
@@ -50,6 +50,7 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  margin: 14px 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

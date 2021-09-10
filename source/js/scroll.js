@@ -9,7 +9,7 @@ window.onscroll = function scrollFunc() {
     if (progressPercent == NaN) {
         scrollLine.value = 0;
     } else {
-        scrollLine.value = progressPercent;
+        scrollLine.value = progressPercent.toFixed(2);
     }
     return progressPercent
 }
