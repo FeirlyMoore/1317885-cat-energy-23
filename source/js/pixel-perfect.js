@@ -21,3 +21,5 @@ document.onkeydown = function(e) {
       break;
   }
 };
+
+//<!DOCTYPE Liky>
