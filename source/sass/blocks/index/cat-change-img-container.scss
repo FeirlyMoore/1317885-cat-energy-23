@@ -16,6 +16,8 @@
 
   @media (min-width: $desktop-width) {
     height: 536px;
+    bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -40,7 +42,7 @@
     height: 536px;
     background-size: auto;
     background-position-x: -15px;
-    background-position-y: 4px;
+    background-position-y: 10px;
   }
 }
 
@@ -71,6 +73,7 @@
   @media (min-width: $desktop-width) {
     background-size: auto;
     background-position-x: 60px;
+    background-position-y: 10px;
   }
 }
 

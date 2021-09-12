@@ -19,10 +19,6 @@
   line-height: 16px;
   color: $special_dark-grey;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 22px;
-  }
-
   &:hover {
     .html-academy-logo {
       color: $light-green;
@@ -31,6 +27,14 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

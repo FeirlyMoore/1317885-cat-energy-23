@@ -3,9 +3,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <!--  -->
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--  -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/iconsfavicon_package_v0.16/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon_package_v0.16/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon_package_v0.16/favicon-16x16.png" />
@@ -13,21 +13,25 @@
     <link rel="mask-icon" href="img/icons/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
-    <!--  -->
+    <!-- Description & Keywords -->
+    <meta name="description" content="HTML Academy: Кэт энерджи - это линейка премиум кормов для вашей кошки.
+    На данный момент существует два рациона: Cat Energy PRO - для набора массы, и Cat Energy Slim - для похудения."
+    />
+    <meta name="keywords" content="корм, корма для животных, корм для кошек, рацион питания для кошки, диета для кошки, кэт энерджи, cat energy, Cat Energy PRO, Cat Energy Slim"
+    />
+    <!-- styles & Title -->
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
   <body class="body loaded-hiding">
     <!-- Pixel Perfect -->
-    <!-- Действующие клавиши W и S, + и - соответственно -->
+    <!-- Клавиши управления Opacity - "W" и "S", "+" и "-" соответственно -->
     <div class="pixel-perfect">
       <button class="pixel-perfect__button visually-hidden"></button>
       <picture class="pixel-perfect__picture">
         <source srcset="Pixel-Perfect/index-desktop.png" media="(min-width: 1440px)">
-        <source srcset="Pixel-Perfect/index-tablet.png" media="(min-width: 768px)">
-        <img class="pixel-perfect__img" src="Pixel-Perfect/index-mobile.jpg" alt="pixel-perfect">
-      </picture>
+        <source srcset="Pixel-Perfect/index-tablet.png" media="(min-width: 768px)"> <img class="pixel-perfect__img" src="Pixel-Perfect/index-mobile.jpg" alt="pixel-perfect"> </picture>
     </div>
     <script src="js/pixel-perfect.js"></script>
     <!-- Preloader -->
@@ -167,10 +171,10 @@
           </div>
           <div class="cat-change__range-container">
             <div class="cat-change__range-label">
-              <button class="cat-change__range-button button-before-js">было</button>
+              <button class="cat-change__range-button button-before button-before-js">было</button>
               <input class="cat-change__range cat-change__range-js" type="range" name="cat-change"
               min="0" max="100" value="50" step="1" />
-              <button class="cat-change__range-button button-after-js">стало</button>
+              <button class="cat-change__range-button button-after button-after-js">стало</button>
             </div>
           </div>
         </div>
@@ -187,7 +191,7 @@
             <p class="partnership__adress"> ул. Большая
               <br> Конюшенная, д. 19/8
               <br>
-              <br class="tablet-visible"> Санкт-Петербург </p>
+              <br class="mobile-only--hidden"> Санкт-Петербург </p>
           </div>
         </div>
         <!-- Карта с отображением нашей организации -->
