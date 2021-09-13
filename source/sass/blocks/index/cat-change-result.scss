@@ -32,7 +32,7 @@
 .cat-change__item {
   width: 122px;
   text-align: center;
-  padding: 13px 0 18px;
+  padding: 13px 0 10px;
   border: 1px solid $special_grey;
   border-radius: 5px;
   position: relative;
@@ -40,6 +40,7 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     margin-right: 40px;
+    padding: 13px 0 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,7 +75,7 @@
   color: $special_dark-grey;
   background-color: $light-gray;
   margin: 0 auto;
-  padding: 0 9px;
+  padding: 0 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -96,7 +97,7 @@
   line-height: 20px;
   color: $pre-black-color;
   text-align: center;
-  margin: 0 0 0 3px;
+  margin: 0 0 30px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 auto;
@@ -115,7 +116,11 @@
 }
 
 .cat-change__money-spent__sub {
-  margin-left: 60px;
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
 }
 
 //<!DOCTYPE Liky>

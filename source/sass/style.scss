@@ -7,10 +7,12 @@
 @import "global/variables.scss";
 @import "global/normalize";
 @import "global/mixins.scss";
-//Сommon element styles
+// Сommon element styles
 @import "global/page.scss";
 @import "global/scroll.scss";
 @import "global/preloader.scss";
+// Pixel Perfect
+@import "global/pixel-perfect.scss";
 
 /* Blocks */
 
@@ -23,7 +25,7 @@
 
 /* Individual styles */
 
-//index
+// index
 @import "blocks/index/promo.scss";
 @import "blocks/index/promo-title.scss";
 @import "blocks/index/promo-img.scss";
@@ -40,7 +42,7 @@
 @import "blocks/index/cat-change-example.scss";
 @import "blocks/index/cat-change-img-container.scss";
 @import "blocks/index/cat-change-range-container.scss";
-//catalog
+// catalog
 @import "blocks/catalog/products-wrapper.scss";
 @import "blocks/catalog/product-item.scss";
 @import "blocks/catalog/product-item-description.scss";
@@ -52,7 +54,7 @@
 @import "blocks/catalog/additional-products-list.scss";
 @import "blocks/catalog/additional-products-item.scss";
 @import "blocks/catalog/order-all-gift-block.scss";
-//form
+// form
 @import "blocks/form/form.scss";
 @import "blocks/form/form-wrapper.scss";
 @import "blocks/form/form-item.scss";
@@ -63,7 +65,7 @@
 @import "blocks/form/form-fieldset-comment-form.scss";
 @import "blocks/form/form-additional-products.scss";
 @import "blocks/form/form-send-button.scss";
-//Footer
+// Footer
 @import "blocks/footer/footer.scss";
 @import "blocks/footer/footer-partnership.scss";
 @import "blocks/footer/footer-location-map.scss";

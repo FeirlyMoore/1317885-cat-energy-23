@@ -6,6 +6,12 @@ const btnBefore = document.querySelector('.button-before-js');
 const range = document.querySelector('.cat-change__range-js');
 const btnAfter = document.querySelector('.button-after-js');
 
+if (window.innerWidth <= 767) {
+  imgOne.style.width = 100 + "%";
+  imgTwo.style.width = 0 + "%";
+  range.value = 0;
+}
+
 range.oninput = () => {
   /*Значение range принимается за ширину второго елемента*/
   let rangeValue = range.value;

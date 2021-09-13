@@ -31,8 +31,8 @@
 
 .privileges__item-img {
   position: absolute;
-  top: 22px;
-  left: 24px;
+  top: 20px;
+  left: 22px;
 
   @media (min-width: $tablet-width) {
     width: 200px;
@@ -52,8 +52,8 @@
 }
 
 .privileges__item-img--2 {
-  top: 21px;
-  left: 14px;
+  top: 23px;
+  left: 13px;
 
   @media (min-width: $tablet-width) {
     width: 269px;
@@ -80,7 +80,7 @@
   color: $pre-black-color;
   font-weight: 400;
   padding-left: 72px;
-  margin: 0 0 30px;
+  margin: 0 0 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -137,8 +137,8 @@
     position: absolute;
     width: 24px;
     height: 12px;
-    top: 5px;
-    left: 135px;
+    top: 1px;
+    left: 41.5%;
     background-image: url("../img/icons/icon-arrow.svg");
     background-repeat: no-repeat;
   }
@@ -148,8 +148,8 @@
     position: absolute;
     width: 32px;
     height: 12px;
-    top: 5px;
-    left: 135px;
+    top: 1px;
+    left: 41.5%;
     transition: background-image 0.1s;
     background-image: url("../img/icons/icon-arrow--big.svg");
     background-repeat: no-repeat;
@@ -162,10 +162,56 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 12px;
+      top: 5px;
+      left: 135px;
+      background-image: url("../img/icons/icon-arrow.svg");
+      background-repeat: no-repeat;
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 12px;
+      top: 5px;
+      left: 135px;
+      transition: background-image 0.1s;
+      background-image: url("../img/icons/icon-arrow--big.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 2px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 12px;
+      top: 5px;
+      left: 135px;
+      background-image: url("../img/icons/icon-arrow.svg");
+      background-repeat: no-repeat;
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 12px;
+      top: 5px;
+      left: 135px;
+      transition: background-image 0.1s;
+      background-image: url("../img/icons/icon-arrow--big.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 

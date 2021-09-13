@@ -20,25 +20,16 @@
 
   <body class="body loaded-hiding">
     <!-- Pixel Perfect -->
-    <!-- <div class="pixel-perfect">
+    <!-- Действующие клавиши W и S, + и - соответственно -->
+    <div class="pixel-perfect">
+      <button class="pixel-perfect__button visually-hidden"></button>
       <picture class="pixel-perfect__picture">
         <source srcset="Pixel-Perfect/catalog-desktop.png" media="(min-width: 1440px)">
         <source srcset="Pixel-Perfect/catalog-tablet.png" media="(min-width: 768px)">
-        <img class="pixel-perfect__img" src="Pixel-Perfect/catalog-mobile.jpg" alt="">
+        <img class="pixel-perfect__img" src="Pixel-Perfect/catalog-mobile.jpg" alt="pixel-perfect">
       </picture>
     </div>
-    <style>
-      .pixel-perfect__img {
-        position: absolute;
-        z-index: 5;
-        top: 0;
-        left: 50%;
-        pointer-events: none;
-        transform: translateX(-50%);
-        overflow: hidden;
-        opacity: 0;
-      }
-    </style>  -->
+    <script src="js/pixel-perfect.js"></script>
     <!-- Preloader -->
     <div class="preloader">
       <div class="preloader__row">

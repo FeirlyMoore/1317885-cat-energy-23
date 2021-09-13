@@ -16,6 +16,11 @@
 }
 
 .cat-change__range-label {
+  /*display: flex;
+  justify-content: space-between;
+    align-items: center;
+  width: fit-content;*/
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: nowrap;
@@ -28,13 +33,21 @@
 
 .cat-change__range-button {
   @include uppercase();
+  position: absolute;
+  left: 18%;
   background-color: transparent;
   border: 0;
-  padding: 0;
-  margin: 0 auto;
+  cursor: pointer;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  margin: 0 auto;
+
+
+  &:last-child {
+    right: 16.5%;
+    left: initial;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -49,13 +62,13 @@
 }
 
 .cat-change__range {
-  width: 82px;
+  width: 73px;
   height: 12px;
   border: 1px solid $special_grey;
   background-color: $main-color;
   border-radius: 6px;
-  margin-left: 20px;
-  margin-right: 17px;
+  // margin-left: 20px;
+  // margin-right: 10px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
@@ -70,9 +83,11 @@ input[type="range"] {
   position: relative;
   appearance: none;
   background: $main-color;
+  padding: 0 5px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -95,7 +110,6 @@ input[type="range"]::-webkit-slider-thumb {
   width: 50%;
   background-color: $light-green;
   border-radius: 5px;
-  margin-left: 6px; /* ДОРАБОТАТЬ */
 
   @media (min-width: $tablet-width) {
     height: 34px;

@@ -18,6 +18,7 @@
   line-height: 36px;
   font-style: normal;
   font-weight: 400;
+  margin: 8% 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -41,17 +42,18 @@
   line-height: 14px;
   font-style: normal;
   font-weight: normal;
+  margin-bottom: 8%;
 
   @media (min-width: $tablet-width) {
     text-align: left;
     width: 420px;
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 43px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 53px;
+    margin-bottom: 53px;
   }
 }
 
