@@ -20,7 +20,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 0 0 20px;
+
+    &:first-child {
+      padding: 0;
+    }
+
+    &:nth-child(3) {
+      padding: 0 0 0 40px;
+    }
+
+    &:last-child {
+      padding: 0 0 0 60px;
+    }
   }
 }
 
@@ -69,6 +81,28 @@
       left: 47%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &.background-number-1 {
+      bottom: -10px;
+      left: 58%;
+    }
+
+    &.background-number-2 {
+      bottom: -10px;
+      left: 54%;
+    }
+
+    &.background-number-3 {
+      bottom: -57px;
+      left: 63%;
+    }
+
+    &.background-number-4 {
+      bottom: -57px;
+      left: 57%;
+    }
+  }
 }
 
 .how-it-work__img {
@@ -82,7 +116,11 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    margin: 0 0 35px 0;
+    margin: 0 0 33px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 30px 0;
   }
 }
 

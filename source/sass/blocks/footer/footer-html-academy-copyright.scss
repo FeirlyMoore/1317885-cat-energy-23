@@ -1,11 +1,13 @@
 .footer__html-academy-copyright {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   height: 78px;
 
   @media (min-width: $tablet-width) {
     height: 103px;
+    bottom: 4px;
   }
 }
 
@@ -30,7 +32,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 22px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

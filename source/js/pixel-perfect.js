@@ -9,7 +9,7 @@ let ppOpValue = ppImg.style.opacity;
 
 let i = 0.1;
 
-document.onkeydown = function(e) {
+document.onkeydown = (e) => {
   if (ppImg.style.opacity <= 0) {
     pixelPerfect.classList.add('hidden');
   } else if (ppImg.style.opacity > 0) {
