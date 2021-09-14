@@ -7,11 +7,12 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 10px auto;
+    // margin: 10px auto;
+    margin: 0 0 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 }
 
@@ -34,7 +35,6 @@
 .cat-change__range-button {
   @include uppercase();
   position: absolute;
-  left: 18%;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -43,13 +43,8 @@
   line-height: 20px;
   margin: 0 auto;
 
-
-  &:last-child {
-    right: 16.5%;
-    left: initial;
-  }
-
   @media (min-width: $tablet-width) {
+    position: relative;
     font-size: 20px;
     border-bottom: 1px dotted $black-color;
     padding-bottom: 6px;
@@ -59,6 +54,34 @@
       border-bottom: 1px solid rgba($black-color, 0.4);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    top: 3px;
+  }
+}
+
+.button-before {
+  left: 18%;
+
+  @media (min-width: $tablet-width) {
+    left: -12px;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   left: -12px;
+  // }
+}
+
+.button-after {
+  right: 16.5%;
+
+  @media (min-width: $tablet-width) {
+    right: -10px;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   right: -10px;
+  // }
 }
 
 .cat-change__range {
@@ -67,8 +90,6 @@
   border: 1px solid $special_grey;
   background-color: $main-color;
   border-radius: 6px;
-  // margin-left: 20px;
-  // margin-right: 10px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
@@ -86,7 +107,7 @@ input[type="range"] {
   padding: 0 5px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    background-color: $special-range-gray;
     padding: 0;
   }
 }
@@ -142,12 +163,17 @@ input[type="range"]::-webkit-slider-runnable-track {
   background: $main-color;
   border-radius: 5px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    background-color: $special-range-gray;
+    padding: 0;
+  }
+
+  /*@media (min-width: $desktop-width) {
     height: 6px;
     cursor: pointer;
     background: $special-range-gray;
     border-radius: 5px;
-  }
+  }*/
 }
 
 input[type="range"]:focus::-webkit-slider-runnable-track {

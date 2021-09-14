@@ -21,13 +21,15 @@
   margin: 8% 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    left: -2px;
     font-size: 60px;
     line-height: 60px;
     color: $pre-black-color;
     text-align: left;
     width: 420px;
     margin: 0 0 40px 0;
-    padding: 52px 0 0 0;
+    padding: 50px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +51,7 @@
     width: 420px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 43px;
+    margin: 42px 0 49px;
   }
 
   @media (min-width: $desktop-width) {

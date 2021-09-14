@@ -2,12 +2,12 @@
   @include container();
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 15px;
     padding: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 75px;
     padding: 0 110px;
     width: 100%;
   }

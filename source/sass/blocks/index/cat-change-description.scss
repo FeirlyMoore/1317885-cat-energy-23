@@ -4,11 +4,13 @@
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
+    margin-bottom: 50px; /*Доработать !!!!!!!!!!!!!!!!!*/
   }
 
   @media (min-width: $desktop-width) {
     min-width: 495px;
     width: fit-content;
+    margin: 0;
   }
 }
 
@@ -30,7 +32,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 146px;
-    padding: 57px 0 0;
+    padding: 53px 0 0;
   }
 }
 
