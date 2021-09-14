@@ -22,12 +22,12 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(gulp.dest("build/css"))
+    // .pipe(gulp.dest("build/css"))
     .pipe(postcss([
-      autoprefixer(),
-      csso()
+      autoprefixer()
+      // csso()
     ]))
-    .pipe(rename("style.min.css"))
+    // .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
