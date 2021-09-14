@@ -8,7 +8,7 @@
   background: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/index-background-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px 302px;
+  background-size: 100% 302px;
 
 
   @media (min-width: $tablet-width) {
@@ -28,7 +28,7 @@
     background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/index-background-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
-    background-size: 720px 694px;
+    background-size: 50% 694px;
     margin-bottom: 8px;
   }
 }

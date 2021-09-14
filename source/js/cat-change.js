@@ -12,26 +12,27 @@ if (window.innerWidth <= 767) {
   range.value = 0;
 }
 
-range.oninput = () => {
-  /*Значение range принимается за ширину второго елемента*/
-  let rangeValue = range.value;
-  /*Расчёт ширины первого элемента*/
-  let elemOneWidth = 100 - rangeValue;
+if (range || btnBefore || btnAfter) {
+  range.oninput = () => {
+    /*Значение range принимается за ширину второго елемента*/
+    let rangeValue = range.value;
+    /*Расчёт ширины первого элемента*/
+    let elemOneWidth = 100 - rangeValue;
 
-  imgOne.style.width = elemOneWidth + "%";
-  imgTwo.style.width = rangeValue + "%";
+    imgOne.style.width = elemOneWidth + "%";
+    imgTwo.style.width = rangeValue + "%";
+  }
+
+  btnBefore.onclick = () => {
+    range.value = 0;
+    imgOne.style.width = 100 + "%";
+    imgTwo.style.width = 0 + "%";
+  }
+
+  btnAfter.onclick = () => {
+    range.value = 100;
+    imgOne.style.width = 0 + "%";
+    imgTwo.style.width = 100 + "%";
+  }
 }
-
-btnBefore.onclick = () => {
-  range.value = 0;
-  imgOne.style.width = 100 + "%";
-  imgTwo.style.width = 0 + "%";
-}
-
-btnAfter.onclick = () => {
-  range.value = 100;
-  imgOne.style.width = 0 + "%";
-  imgTwo.style.width = 100 + "%";
-}
-
 //<!DOCTYPE Liky>

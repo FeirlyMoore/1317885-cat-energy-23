@@ -105,4 +105,55 @@
   animation: animation-scale var(--animation-duration, 1s) ease;
 }
 
+@keyframes animation-scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.animation-position {
+  animation: animation-position 1s ease;
+}
+
+@media (min-width: $mobile-width) {
+  @keyframes animation-position {
+    0% {
+      left: 50%;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  @keyframes animation-position {
+    0% {
+      left: 50%;
+    }
+
+    100% {
+      left: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  @keyframes animation-position {
+    0% {
+      left: 50%;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+}
+
 //<!DOCTYPE Liky>
