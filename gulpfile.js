@@ -8,11 +8,13 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
-const squoosh = require("gulp-libsquoosh");
+// const squoosh = require("gulp-libsquoosh");
+// const imagemin = require("gulp-imagemin");
+// import imagemin from 'gulp-imagemin';
+const imagemin = require('gulp-imagemin');
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const worker = require('worker_threads');
 const fileinclude = require('gulp-file-include');
 const sync = require("browser-sync").create();
 
@@ -64,7 +66,20 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(squoosh())
+    // .pipe(squoosh())
+    // .pipe(imagemin())
+    /*.pipe(imagemin([
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 5})
+    ]))*/
+    .pipe(imagemin({
+      interlaced: false,
+      progressive: false,
+      optimizationLevel: 3,
+      svgoPlugins: [
+          { removeViewBox: false }
+      ]
+    }))
     .pipe(gulp.dest("build/img"))
 }
 
