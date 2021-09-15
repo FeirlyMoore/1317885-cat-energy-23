@@ -12,6 +12,7 @@ const squoosh = require("gulp-libsquoosh");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const worker = require('worker_threads');
 const fileinclude = require('gulp-file-include');
 const sync = require("browser-sync").create();
 
