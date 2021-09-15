@@ -6,6 +6,7 @@
   margin-bottom: 22px;
   background-color: $footer-gray;
   box-sizing: border-box;
+  animation: animation-scale var(--animation-duration) ease;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;

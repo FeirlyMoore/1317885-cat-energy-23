@@ -81,7 +81,7 @@
   }
 }
 
-input:required:invalid {
+.input-required:required:invalid {
   border: 2px solid $error-color;
 
   & ~ .form__text-input-icon {

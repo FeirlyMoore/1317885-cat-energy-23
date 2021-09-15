@@ -1,0 +1,6 @@
+@@include('cat-change.js')
+@@include('nav-button.js')
+@@include('pixel-perfect.js')
+@@include('preloader.js')
+@@include('scroll.js')
+@@include('custom-validation.js')
