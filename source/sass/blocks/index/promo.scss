@@ -10,7 +10,6 @@
   background-position: top;
   background-size: 100% 302px;
 
-
   @media (min-width: $tablet-width) {
     @include container();
     background: 0 0;
@@ -25,11 +24,24 @@
     flex-wrap: wrap;
     height: 602px;
     padding: 144px 40px 0 190px;
+    margin-bottom: 8px;
+  }
+}
+
+
+.promo::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 22px;
     background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/index-background-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
-    background-size: 50% 694px;
-    margin-bottom: 8px;
+    background-size: cover;
   }
 }
 
