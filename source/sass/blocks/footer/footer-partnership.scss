@@ -47,6 +47,7 @@
 }
 
 .partnership__adress {
+  position: relative;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -55,12 +56,22 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     width: 170px;
+    height: 75px;
     text-align: right;
     margin: 2px 2px -2px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.partnership__city {
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
   }
 }
 
