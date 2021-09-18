@@ -102,6 +102,7 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  max-width: 360px;
   color: $special_dark-grey;
   border-bottom: 1px solid $footer-gray-border;
   margin: 0 0 20px;
@@ -110,7 +111,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 380px;
+    width: 340px;
     border-bottom: none;
     margin-bottom: 35px;
   }
@@ -120,6 +121,10 @@
     padding-left: 2px;
     padding-bottom: 0;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 472px;
   }
 }
 

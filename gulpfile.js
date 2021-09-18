@@ -8,9 +8,6 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
-// const squoosh = require("gulp-libsquoosh");
-// const imagemin = require("gulp-imagemin");
-// import imagemin from 'gulp-imagemin';
 const imagemin = require('gulp-imagemin');
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -26,6 +23,7 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -33,6 +31,7 @@ const styles = () => {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
@@ -54,6 +53,7 @@ const scripts = () => {
       prefix: '@@',
       basepath: '@file'
     }))
+    .pipe(gulp.dest("build/js"))
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
@@ -66,12 +66,6 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    // .pipe(squoosh())
-    // .pipe(imagemin())
-    /*.pipe(imagemin([
-      imagemin.mozjpeg({quality: 75, progressive: true}),
-      imagemin.optipng({optimizationLevel: 5})
-    ]))*/
     .pipe(imagemin({
       interlaced: false,
       progressive: false,
@@ -164,8 +158,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/**/*.js", gulp.series(scripts));
+  // gulp.watch("source/*.html").on("change", sync.reload);
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 

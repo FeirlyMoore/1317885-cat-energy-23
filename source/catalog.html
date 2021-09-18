@@ -9,7 +9,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/iconsfavicon_package_v0.16/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon_package_v0.16/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon_package_v0.16/favicon-16x16.png" />
-    <!-- <link rel="manifest" href="img/icons/favicon_package_v0.16/site.webmanifest" /> -->
     <link rel="mask-icon" href="img/icons/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
@@ -23,7 +22,7 @@
     <title>HTML Academy: Кэт энерджи - Каталог продукции </title>
   </head>
 
-  <body class="body loaded-hiding">
+  <body class="body">
     <!-- Pixel Perfect -->
     <!-- Клавиши управления Opacity - "W" и "S", "+" и "-" соответственно -->
     <div class="pixel-perfect">
@@ -40,6 +39,9 @@
         <div class="preloader__item"></div>
       </div>
     </div>
+    <script async type="text/javascript">
+      document.querySelector('.preloader').classList.add('preloader--active');
+    </script>
     <!-- <script src="js/preloader.js"></script> -->
     <!-- Шапка сайта : логотит, навигация ( меню ) -->
     <header class="main-header main-header--no-index main-header--style">
@@ -328,19 +330,19 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="https://vk.com/doctype_redfox39" target="_blank">
-                <svg class="social__icon social__icon--vk">
+                <svg class="social__icon social__icon--vk" width="28" height="22">
                   <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-vk" /> </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="https://www.instagram.com/blake_moore_fox_666" target="_blank">
-                <svg class="social__icon social__icon--inst">
+                <svg class="social__icon social__icon--inst" width="20" height="20">
                   <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-inst" /> </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="https://www.facebook.com/REDFFOX39" target="_blank">
-                <svg class="social__icon social__icon--fb">
+                <svg class="social__icon social__icon--fb" width="22" height="22">
                   <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-fb" /> </svg>
               </a>
             </li>

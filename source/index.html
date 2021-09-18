@@ -9,7 +9,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/iconsfavicon_package_v0.16/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon_package_v0.16/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon_package_v0.16/favicon-16x16.png" />
-    <!-- <link rel="manifest" href="img/icons/favicon_package_v0.16/site.webmanifest" /> -->
     <link rel="mask-icon" href="img/icons/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
@@ -24,7 +23,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
-  <body class="body loaded-hiding">
+  <body class="body">
     <!-- Pixel Perfect -->
     <!-- Клавиши управления Opacity - "W" и "S", "+" и "-" соответственно -->
     <div class="pixel-perfect">
@@ -41,6 +40,9 @@
         <div class="preloader__item"></div>
       </div>
     </div>
+    <script async type="text/javascript">
+      document.querySelector('.preloader').classList.add('preloader--active');
+    </script>
     <!-- <script src="js/preloader.js"></script> -->
     <!-- Шапка сайта : логотит, навигация ( меню ) -->
     <header class="main-header main-header--style">
@@ -83,7 +85,12 @@
             <svg class="privileges__item-img" width="50" height="53" aria-label="Slim cat">
               <use xlink:href="img/privileges/conglomerate__privileges-img.svg#slim" /> </svg>
             <h2 class="privileges__title">похудение</h2>
-            <p class="privileges__description"> Ваш кот весит больше собаки и
+            <p class="privileges__description">
+              Ваш кот весит больше собаки и
+              почти утратил способность лазить по деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <!-- <p class="privileges__description"> Ваш кот весит больше собаки и
               <br class="mobile-visible"> почти
               <br class="tablet-visible"> утратил способность
               <br class="desktop-visible"> лазить
@@ -92,14 +99,21 @@
               <br class="mobile-visible"> Energy Slim поможет
               <br class="desktop-visible">
               <br class="tablet-visible"> вашему
-              <br class="mobile-visible"> питомцу сбросить лишний вес. </p> <a href="catalog.html" class="catalog-button catalog-button--style">
+              <br class="mobile-visible"> питомцу сбросить лишний вес.
+            </p> -->
+            <a href="catalog.html" class="catalog-button catalog-button--style">
               каталог slim
-            </a> </li>
+            </a>
+          </li>
           <li class="privileges__list-item">
             <svg class="privileges__item-img privileges__item-img--2" width="67" height="50" aria-label="Fat cat">
               <use xlink:href="img/privileges/conglomerate__privileges-img.svg#muscle" /> </svg>
             <h2 class="privileges__title">Набор массы</h2>
-            <p class="privileges__description"> Заработать авторитет среди
+            <p class="privileges__description">
+              Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <!-- <p class="privileges__description"> Заработать авторитет среди
               <br class="mobile-visible"> дворовых котов
               <br class="tablet-visible"> и даже собак?
               <br class="desktop-visible">
@@ -108,9 +122,12 @@
               <br class="mobile-visible"> вашему коту нарастить
               <br class="desktop-visible">
               <br class="mobile-visible"> необходимые
-              <br class="tablet-visible"> мышцы! </p> <a href="catalog.html" class="catalog-button catalog-button--style">
+              <br class="tablet-visible"> мышцы!
+            </p> -->
+            <a href="catalog.html" class="catalog-button catalog-button--style">
               каталог pro
-            </a> </li>
+            </a>
+          </li>
         </ul>
       </div>
       <!-- Как работает и из чего состоит -->
@@ -135,27 +152,42 @@
                 <br> функциональное питание. </p> <span class="how-it-work__background-number background-number-3">3</span>              </li>
             <li class="how-it-work__item"> <img class="how-it-work__img" src="img/icons/icon-alarm.svg" width="60" height="60" alt="Changes in a month"
               />
-              <p class="how-it-work__description"> Уже через месяц
+              <p class="how-it-work__description">
+                Уже через месяц<br class="mobile-visible"> наслаждайтесь
+                изменениями к лучшему вашего питомца!
+              </p>
+              <!-- <p class="how-it-work__description"> Уже через месяц
                 <br class="mobile-visible"> наслаждайтесь
                 <br class="tablet-visible"> изменениями
                 <br class="mobile-visible"> к лучшему
-                <br class="mobile-only--hidden"> вашего питомца! </p> <span class="how-it-work__background-number background-number-4 ">4</span>              </li>
+                <br class="mobile-only--hidden"> вашего питомца!
+              </p> -->
+              <span class="how-it-work__background-number background-number-4 ">4</span>
+            </li>
           </ul>
         </div>
       </section>
       <!-- Показательный блок : массивный кот превращается в худого, и наоборот -->
       <div class="cat-change">
         <article class="cat-change__description">
-          <h2 class="cat-change__title">Живой пример</h2>
-          <p class="cat-change__text">Борис сбросил 5 кг за 2 месяца, просто
+          <h2 class="cat-change__title">Живой пример</h2><!-- &nbsp; -->
+          <p class="cat-change__text">
+            Борис сбросил 5 кг за 2 месяца, просто
+            заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок!
+            При этом он не менял своих привычек и
+            по-прежнему спит по 16 часов в день.
+          </p>
+          <!-- <p class="cat-change__text">
+            Борис сбросил 5 кг за 2 месяца, просто
             <br class="mobile-visible"> заменив свой обычный корм на Cat Energy
-            <!-- &nbsp; -->
             <br class="mobile-visible"> Slim.
             <br class="tablet-visible"> Отличный результат без изнуряющих
             <br class="mobile-visible"> тренировок! При этом он не менял своих
             <br class="mobile-visible"> привычек и
             <br class="tablet-visible"> по-прежнему спит по 16 часов
-            <br class="mobile-visible"> в день. </p>
+            <br class="mobile-visible"> в день.
+          </p> -->
           <div class="cat-change__result">
             <ul class="cat-change__list">
               <li class="cat-change__item"> <span class="cat-change__item-text">5 кг</span> <span class="cat-change__item-sub-text">снижение веса</span>                </li>
@@ -211,19 +243,19 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="https://vk.com/doctype_redfox39" target="_blank">
-                <svg class="social__icon social__icon--vk">
+                <svg class="social__icon social__icon--vk" width="28" height="22">
                   <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-vk" /> </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="https://www.instagram.com/blake_moore_fox_666" target="_blank">
-                <svg class="social__icon social__icon--inst">
+                <svg class="social__icon social__icon--inst" width="20" height="20">
                   <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-inst" /> </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="https://www.facebook.com/REDFFOX39" target="_blank">
-                <svg class="social__icon social__icon--fb">
+                <svg class="social__icon social__icon--fb" width="22" height="22">
                   <use xlink:href="img/icons/conglomerate__decorative-icons.svg#icon-fb" /> </svg>
               </a>
             </li>

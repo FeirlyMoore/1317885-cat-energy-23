@@ -1,6 +1,6 @@
 .promo__title-wrapper {
   text-align: center;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $font-stack--Oswald-Regular;
   color: $main-color;
 
   @media (min-width: $tablet-width) {
