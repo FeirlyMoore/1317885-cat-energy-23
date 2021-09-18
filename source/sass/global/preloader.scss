@@ -6,6 +6,7 @@
   bottom: 0;
   background: $main-color;
   z-index: 100;
+  display: none;
 }
 
 .loaded--hiding .preloader {
@@ -13,8 +14,8 @@
   opacity: 0;
 }
 
-.loaded .preloader {
-  display: none;
+.preloader--active {
+  display: initial;
 }
 
 .preloader__row {

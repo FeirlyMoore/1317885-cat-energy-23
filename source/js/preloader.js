@@ -1,11 +1,11 @@
-document.body.classList.remove('loaded-hiding');
+const preloader = document.querySelector('.preloader');
 
 window.onload = () => {
   document.body.classList.add('loaded-hiding');
 
   window.setTimeout(() => {
     /* Прелоадер */
-    document.body.classList.add('loaded');
+    preloader.classList.remove('preloader--active');
     document.body.classList.remove('loaded-hiding');
 
     /* Анимации */
@@ -17,6 +17,9 @@ window.onload = () => {
     const promoPicture = document.querySelector('.promo__picture');
     const products = document.querySelectorAll('.products__item');
     const privilegesItem = document.querySelectorAll('.privileges__list-item');
+    const mainTitle = document.querySelector('.main-title');
+    const mainSubtitle = document.querySelector('.main-subtitle');
+    const formLegends = document.querySelectorAll('.form__legend');
 
     /* Добавление класса общей анимации ( Scale ) */
     let animScaleArr = [promoWrapper, promoButton, formAnimItem, formAnimFieldset, formAnimTextarea];
@@ -32,6 +35,14 @@ window.onload = () => {
 
     /* Вариативная анимация Position*/
     promoPicture && promoPicture.classList.add('animation-position');
+    mainTitle && mainTitle.classList.add('animation-position');
+    mainSubtitle && mainSubtitle.classList.add('animation-position');
+
+    if (formLegends) {
+      for (legend of formLegends) {
+        legend.classList.add('animation-position');
+      }
+    }
 
     /* Вариативная анимация Scale*/
     if (privilegesItem) {
