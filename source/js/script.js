@@ -3,6 +3,5 @@
 @@include('scroll.js')
 @@include('custom-validation.js')
 @@include('cat-change.js')
-@@include('pixel-perfect.js')
 
 //<!DOCTYPE Liky>

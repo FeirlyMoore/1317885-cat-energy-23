@@ -1,5 +1,5 @@
 const inputs = document.querySelectorAll('input');
-const submit = document.querySelector(".form__send-button");
+const submit = document.querySelector('.form__send-button');
 
 if (inputs && submit) {
   submit.onclick = () => {

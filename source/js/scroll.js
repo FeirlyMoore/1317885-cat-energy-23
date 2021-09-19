@@ -1,4 +1,4 @@
-let scrollLine = document.getElementById("page_progress");
+let scrollLine = document.getElementById('page_progress');
 
 window.onscroll = function scrollFunc() {
     let pageHeight = document.documentElement.scrollHeight;
