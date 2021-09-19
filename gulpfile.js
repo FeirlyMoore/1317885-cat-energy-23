@@ -1,19 +1,19 @@
-const gulp = require("gulp");
-const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
-const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
-const csso = require("postcss-csso");
-const rename = require("gulp-rename");
-const htmlmin = require("gulp-htmlmin");
-const terser = require("gulp-terser");
+const gulp = require('gulp');
+const plumber = require('gulp-plumber');
+const sourcemap = require('gulp-sourcemaps');
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const csso = require('postcss-csso');
+const rename = require('gulp-rename');
+const htmlmin = require('gulp-htmlmin');
+const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
-const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
-const del = require("del");
+const webp = require('gulp-webp');
+const svgstore = require('gulp-svgstore');
+const del = require('del');
 const fileinclude = require('gulp-file-include');
-const sync = require("browser-sync").create();
+const sync = require('browser-sync').create();
 
 // Styles
 
