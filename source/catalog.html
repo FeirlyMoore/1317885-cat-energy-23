@@ -45,7 +45,8 @@
         <a href="index.html" class="main-header__logo main-header__logo-1">
           <picture>
             <source srcset="img/logo/desktop-header-logo.svg" media="(min-width: 1200px)">
-            <source srcset="img/logo/tablet-header-logo.svg" media="(min-width: 768px)"> <img class="header-logo-img-1" src="img/logo/cat-e__logo.svg" alt="Logotype" /> </picture>
+            <source srcset="img/logo/tablet-header-logo.svg" media="(min-width: 768px)">
+            <img class="header-logo-img-1" src="img/logo/cat-e__logo.svg" alt="Logotype" /> </picture>
         </a>
         <a href="index.html" class="main-header__logo main-header__logo-2"> <img class="header-logo-img-2" src="img/logo/cat-e__logo-text.svg" width="101" height="18" alt="Cat Energy"
           /> </a>
@@ -72,7 +73,11 @@
           <!-- Изображение товара в адаптиве -->
           <div class="products__pic-wrapper">
             <picture class="products__picture">
-              <source srcset="img/catalog/product__pro-chicken-500--tablet&desktop.webp" media="(min-width: 768px)"> <img class="products__img" src="img/catalog/product__pro-chicken-500--mobile.webp" alt="Cat Energy PRO Курица 500 г">              </picture>
+              <source srcset="img/catalog/product__pro-chicken-500--tablet&desktop.webp,
+                img/catalog/product__pro-chicken-500--tablet&desktop.png" media="(min-width: 768px)">
+              <img class="products__img" srcset="img/catalog/product__pro-chicken-500--mobile.webp,
+                img/catalog/product__pro-chicken-500--mobile.png" alt="Cat Energy PRO Курица 500 г">
+            </picture>
           </div>
           <!-- Описание товара -->
           <div class="item-description">
