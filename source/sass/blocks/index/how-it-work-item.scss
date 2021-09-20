@@ -37,7 +37,8 @@
 }
 
 .how-it-work__description {
-  width: 260px;
+  min-width: 200px;
+  max-width: 230px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;

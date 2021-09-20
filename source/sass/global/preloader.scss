@@ -18,6 +18,31 @@
   display: initial;
 }
 
+.preloader__logo {
+  position: absolute;
+  width: 175px;
+  height: auto;
+  top: 30%;
+  left: 50%;
+  margin-left: -87px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    height: auto;
+    top: 30%;
+    left: 50%;
+    margin-left: -115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 345px;
+    height: auto;
+    top: 30%;
+    left: 50%;
+    margin-left: -172px;
+  }
+}
+
 .preloader__row {
   position: relative;
   top: 50%;
