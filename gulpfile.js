@@ -151,6 +151,8 @@ const server = (done) => {
       // baseDir: "build"
       baseDir: "docs"
     },
+    host: "192.168.1.71",
+    tunnel: true,
     cors: true,
     notify: false,
     ui: false,

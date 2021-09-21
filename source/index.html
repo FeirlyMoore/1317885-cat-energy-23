@@ -39,7 +39,6 @@
     <script async type="text/javascript">
       document.querySelector('.preloader').classList.add('preloader--active');
     </script>
-    <!-- <script src="js/preloader.js"></script> -->
     <!-- Шапка сайта : логотит, навигация ( меню ) -->
     <header class="main-header main-header--style">
       <div class="main-header__wrapper">
@@ -71,9 +70,11 @@
           <p class="promo__subtitle"> Занялся собой? Займись котом! </p>
         </div>
         <picture class="promo__picture">
-          <source srcset="img/icons/index-can.png" media="(min-width: 1200px)">
-          <source srcset="img/icons/index-can-tablet@1x.png" media="(min-width: 768px)">
-          <img class="promo__img" src="img/icons/index-can-mobile@1x.png"/>
+          <!-- <source srcset="img/icons/index-can.webp" type="img/webp" media="(min-width: 1200px)"> -->
+          <source srcset="img/icons/index-can.png" type="img/png" media="(min-width: 1200px)">
+          <!-- <source srcset="img/icons/index-can-tablet@1x.webp" type="img/webp" media="(min-width: 768px)"> -->
+          <source srcset="img/icons/index-can-tablet@1x.png" type="img/png" media="(min-width: 768px)">
+          <img class="promo__img" src="img/icons/index-can-mobile@1x.png" alt="Our Product" />
         </picture>
         <a href="catalog.html" class="promo-button promo-button--style">подобрать программу</a>
       </section>
@@ -233,9 +234,6 @@
     </footer>
     <progress id="page_progress" class="page-progress" max="100" value="0" title="Прогресс прокрутки страницы"></progress>
     <script src="js/script.min.js"></script>
-    <!-- <script src="js/scroll.js"></script>
-    <script src="js/nav-button.js"></script>
-    <script src="js/cat-change.js"></script> -->
   </body>
 
 </html>
