@@ -181,22 +181,7 @@ const watcher = () => {
 
 // Build
 
-// const build = gulp.series(
-//   clean,
-//   copy,
-//   optimizeImages,
-//   gulp.parallel(
-//     styles,
-//     html,
-//     scripts,
-//     sprite,
-//     createWebp
-//   ),
-// );
-
-// exports.build = build;
-
-const docs = gulp.series(
+const build = gulp.series(
   clean,
   copy,
   optimizeImages,
@@ -209,7 +194,22 @@ const docs = gulp.series(
   ),
 );
 
-exports.docs = docs;
+exports.build = build;
+
+// const docs = gulp.series(
+//   clean,
+//   copy,
+//   optimizeImages,
+//   gulp.parallel(
+//     styles,
+//     html,
+//     scripts,
+//     sprite,
+//     createWebp
+//   ),
+// );
+
+// exports.docs = docs;
 
 // Default
 

@@ -5,6 +5,7 @@
   float: right;
   text-align: center;
   list-style: none;
+  user-select: none;
 
   @media (min-width: $tablet-width) {
     display: flex;

@@ -7,6 +7,9 @@
   clear: none;
   box-sizing: border-box;
   z-index: 1;
+  user-select: none;
+  opacity: 1;
+  transition: opacity .4s ease;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -26,6 +29,11 @@
     height: auto;
     width: fit-content;
     margin: -3px 0 0 -52px;
+  }
+
+  :hover {
+    opacity: .8;
+    transition: opacity .4s ease;
   }
 }
 

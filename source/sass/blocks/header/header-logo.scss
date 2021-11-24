@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   padding: 11px 0;
+  user-select: none;
 
   @media (max-width: $mobile-width-only) {
     position: absolute;
