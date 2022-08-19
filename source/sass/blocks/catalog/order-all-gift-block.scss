@@ -7,6 +7,11 @@
   background-image: linear-gradient(to top, $light-green-background, $light-green-background), url("../img/backgrounds/catalog-gift-background.png");
   padding-top: 65px;
 
+  &:hover .gift__img {
+    bottom: 10px;
+    transition: 0.2s;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     width: 100%;
@@ -36,7 +41,11 @@
 
 .gift__img {
   display: block;
+  position: relative;
+  bottom: 0;
   margin: 0 auto 60px;
+  color: #ffffff;
+  transition: 0.2s;
 
   @media (min-width: $tablet-width) {
     margin: auto;

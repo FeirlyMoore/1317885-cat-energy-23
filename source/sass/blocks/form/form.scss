@@ -37,6 +37,7 @@
   flex-grow: 1;
   border: 1px solid $light-gray-border-2;
   box-sizing: border-box;
+  overflow: hidden;
   margin-left: 15px;
   padding: 12px;
 
@@ -45,8 +46,7 @@
   }
 
   &:focus {
-    outline: none;
-    border: 2px solid $special_dark-grey;
+    outline: 2px solid $special_dark-grey;
     border-radius: 0;
 
     .form__text-input-icon {

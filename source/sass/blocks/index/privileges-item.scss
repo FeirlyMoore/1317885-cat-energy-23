@@ -148,6 +148,7 @@
     left: 41.5%;
     background-image: url("../img/icons/icon-arrow.svg");
     background-repeat: no-repeat;
+    transition: 0.2s;
   }
 
   &:hover::after {
@@ -160,6 +161,7 @@
     transition: background-image 0.1s;
     background-image: url("../img/icons/icon-arrow--big.svg");
     background-repeat: no-repeat;
+    transition: 0.2s;
   }
 
   &:active {

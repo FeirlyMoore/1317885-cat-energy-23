@@ -9,6 +9,11 @@
   border-top: 1px solid $catalog-border-color;
   padding: 0 20px;
 
+  &:hover .products__img {
+    bottom: 10px;
+    transition: 0.2s;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
@@ -40,6 +45,7 @@
 
 .products__img {
   margin-left: auto;
+  transition: 0.2s;
 
   @media (min-width: $tablet-width) {
     position: absolute;

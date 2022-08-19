@@ -3,6 +3,11 @@
   flex-wrap: wrap;
   border-top: 1px solid $special_grey;
 
+  &:hover .additional-products__item-title {
+    color: $light-green;
+    transition: 0.2s;
+  }
+
   &:last-child {
     border-bottom: 1px solid $special_grey;
   }
@@ -44,6 +49,7 @@
   line-height: 16px;
   font-weight: 400;
   color: $special_dark-grey-2;
+  transition: 0.2s;
   width: 100%;
   margin: 13px 0;
 
