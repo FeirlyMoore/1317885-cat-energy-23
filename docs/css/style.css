@@ -548,6 +548,64 @@ template {
   100% {
     transform: scale(0); } }
 
+.pony {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 90px;
+  overflow: hidden;
+  box-sizing: border-box;
+  transform: scale(-1, 1);
+  z-index: 100;
+  pointer-events: none;
+  user-select: none; }
+
+.animation--stand {
+  background: url("../img/pony/gif-pony-stand__axi.gif") no-repeat;
+  background-position: 2px 2px;
+  background-size: 68px 68px; }
+
+.animation--trot {
+  background: url("../img/pony/gif-pony-trot__axi.gif") no-repeat;
+  background-position: 0 0;
+  background-size: 70px 75px; }
+
+.animation--fly {
+  background: url("../img/pony/gif-pony-fly__axi.gif") no-repeat;
+  background-position: 0 0;
+  background-size: 70px 85px; }
+
+.animation--boop-fly {
+  background: url("../img/pony/gif-pony-boop-fly__axi.gif") no-repeat;
+  background-position: 0 0;
+  background-size: 73px 85px; }
+
+.animation--boop {
+  background: url("../img/pony/gif-pony-boop__axi.gif") no-repeat;
+  background-position: 0 0;
+  background-size: 70px 70px; }
+
+.animation--sit {
+  background: url("../img/pony/gif-pony-sit__axi.gif") no-repeat;
+  background-position: 0 0;
+  background-size: 75px 70px; }
+
+.animation--boop-sit {
+  background: url("../img/pony/gif-pony-boop-sit__axi.gif") no-repeat;
+  background-position: 0 0;
+  background-size: 74px 70px; }
+
+.animation--lie {
+  background: url("../img/pony/gif-pony-lie__axi.gif") no-repeat;
+  background-position: 0 0;
+  background-size: 74px 70px; }
+
+.animation--boop-lie {
+  background: url("../img/pony/gif-pony-boop-lie__axi.gif") no-repeat;
+  background-position: 0 0;
+  background-size: 74px 70px; }
+
 /* Blocks */
 .main-header {
   min-width: 320px;
@@ -888,7 +946,7 @@ template {
   z-index: 1;
   user-select: none;
   opacity: 1;
-  transition: opacity .4s ease; }
+  transition: opacity 0.4s ease; }
   @media (min-width: 768px) {
     .promo__picture {
       position: absolute;
@@ -1118,7 +1176,6 @@ template {
     height: 12px;
     top: 1px;
     left: 41.5%;
-    transition: background-image 0.1s;
     background-image: url("../img/icons/icon-arrow--big.svg");
     background-repeat: no-repeat;
     transition: 0.2s; }
