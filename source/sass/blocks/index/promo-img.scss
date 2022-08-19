@@ -9,7 +9,7 @@
   z-index: 1;
   user-select: none;
   opacity: 1;
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
 
   @media (min-width: $tablet-width) {
     position: absolute;
